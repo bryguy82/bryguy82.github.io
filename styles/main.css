@@ -23,12 +23,14 @@ h2 {
     border-bottom: 10px solid #bbb;
 }
 
-header, main, footer {
+/*align the text with the document*/
+header, main, footer, nav, .marquee1 {
     margin: 1rem auto;
     padding: 2rem;
     max-width: 850px;
 }
 
+/*blue background style*/
 header, footer, footer a {
     text-align: center;
     background-color: navy;
@@ -41,6 +43,15 @@ header, footer, footer a {
     padding: 5px;
     background-color: #eee;
     line-height: 1.5em;
+}
+
+.marquee1 {
+    animation-direction: normal;
+    animation-direction: alternate-reverse;
+}
+
+.navigation {
+    text-decoration-color: blue;
 }
 
 header img {
