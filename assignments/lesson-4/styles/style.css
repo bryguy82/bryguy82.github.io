@@ -1,0 +1,79 @@
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 1rem auto;
+    padding: 3rem;
+    max-width: auto;
+    margin: 2.5em;
+    text-align: center;
+}
+
+header h3 {
+    text-align: right;
+    height: auto;
+}
+
+body header img {
+    float: left;
+    height: auto;
+}
+
+/*Font types*/
+header {
+    font-family: 'dekko', sans-serif;
+    color: #E3B378;
+    text-align: center;
+    padding: 1em;
+    background-color: #132F3D;
+}
+
+nav {
+    background-color: #132F3D;
+    color: #E19FF9;
+    text-align: center;
+}
+
+body nav ul li {
+    padding: 0em 1.2em;
+    font-family: 'montserrat', sans-serif;
+    display: inline-table;
+    font-size: 18px;
+}
+
+main p {
+    color: #1A3940;
+    font-size: 18px;
+    font-family: 'montserrat', sans-serif;
+}
+
+footer {
+    font-family: 'dekko', sans-serif;
+    color: #E3B378;
+    text-align: center;
+    padding: 1em;
+    background-color: #132F3D;
+}
+
+#storm {
+    max-width: 850px;
+    background-position: auto;
+    background-image: initial;
+    padding: 1em;
+}
+#contact img {
+    padding: 1em;
+    float: left;
+    max-width: 300px;
+}
+
+#beach img {
+    padding: 1em;
+    float: right;
+    max-width: 300px;
+}
+    
