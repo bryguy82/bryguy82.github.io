@@ -30,7 +30,7 @@ h2 {
 }
 
 /*align the text with the document*/
-header, main, footer, nav, .marquee1 {
+header, main, footer, nav {
     margin: 1rem auto;
     padding: 2rem;
     max-width: 850px;
