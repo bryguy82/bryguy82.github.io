@@ -1,13 +1,10 @@
 /* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
-
 
 * { margin: 0; box-sizing: border-box;
     font-family: 'Dekko', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 } 
-
 
 body { 
     font-size: 16px; 
@@ -67,11 +64,6 @@ footer {
     padding: 5px;
     background-color: #eee;
     line-height: 1.5em;
-}
-
-.marquee1 {
-    animation-direction: normal;
-    animation-direction: alternate-reverse;
 }
 
 nav ul li {

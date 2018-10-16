@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Bryan Anderson's weather site for CIT 230 at BYU-I">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <title>Preston</title>
 </head>
 
 <body>
-    <header class="title">
-        <h1>Southern Skies</h1>
-        <img title="Southern Skies" src="images/bolt.jpg" alt="Lightning bolt motto">
-        <h2>Where the skies reach your hands.</h2>
-        <h3>Soda Springs: current conditions</h3>
+    <header>
+        <div id="header-box">
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands.</h2>
+            </div>
+            <div class="conditions">
+                <h3>Current conditions</h3>
+            </div>
+            <div class="logo-box">
+                <img id="logo" title="Southern Skies" src="images/bolt.jpg" alt="Lightning bolt motto">
+            </div>
+        </div>
     </header>
     <nav>
         <ul class="navigation-menu">
             <li>Home</li>
             <li>Weather</li>
-            <li>City
-                <ul>
-                    <li>Preston</li>
-                    <li>Soda Springs</li>
-                    <li>Fish Haven</li>
-                </ul>
-            </li>
+            <li>Preston</li>
+            <li>Soda Springs</li>
+            <li>Fish Haven</li>
             <li>Storm Center</li>
             <li>Gallery</li>
             <li>Travel</li>
@@ -39,28 +44,41 @@
             <p>The town weather pages contain weather conditions and other town information or relevant
                 articles/content.
                 Images are used to reflect the current weather condition data on the town pages and the towns
-                themselves.</p>
-            <img id="storm" title="Thunder Storm" src="images/andras-kovacs-392569-unsplash.jpg" alt="Purple Lightning">
+                themselves.
+            </p>
+            <picture>
+                    <source media="(min-width: 700px)" srcset="images/andras-kovacs-392569-unsplash.jpg">
+                    <source media="(min-width: 500px)" srcset="images/jandre-van-der-walt-559177-unsplash.jpg">
+                    <img id="storm" title="Thunder Storm" src="images/simon-rae-480813-unsplash.jpg" alt="Purple Lightning">
+            </picture>    
         </div>
         <h2 class="body-title">5 Day Forecast</h2>
         <article class="text">
             <img class="image-right" title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
-            <p>Filler info. The town weather pages contain weather conditions and other town information or relevant
+            <p class="adjust">Filler info. The town weather pages contain weather conditions and other town information or relevant
                 articles/content.
                 Images are used to reflect the current weather condition data on the town pages and the towns
-                themselves.</p>
+                themselves.  Filler info. The town weather pages contain weather conditions and other town information or relevant
+                articles/content.
+                Images are used to reflect the current weather condition data on the town pages and the towns
+                themselves.  Filler info. The town weather pages contain weather conditions and other town information or relevant
+                articles/content.
+                Images are used to reflect the current weather condition data on the town pages and the towns
+                themselves.
+            </p>
         </article>
-        <br>
         <div class="text">
             <img class="image-left" title="Basic Map" src="images/map.jpg" alt="Basic Map">
-            <p>Contact Information</p>
-            <p>Phone: 9843-2848</p>
-            <p>Email: southernskies@yahoo.com</p>
+            <div class="adjust">
+                <p>Contact Information</p>
+                <p>Phone: 9843-2848</p>
+                <p>Email: southernskies@yahoo.com</p>
+            </div>
         </div>
     </main>
-    <br>
     <footer>
         <p class="title">&copy; Bryan Anderson, <a href="#">Terms of Use</a> CURRENT DATE</p>
+        <a href="../../index.html">Back to the Index</a>
     </footer>
 </body>
 
