@@ -6,32 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Bryan Anderson's weather site for CIT 230 at BYU-I">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <title>Preston</title>
 </head>
 
 <body>
     <header>
-        <div id="header-box">
-            <div class="title">
-                <h1>Southern Skies</h1>
-                <h2>Where the skies reach your hands.</h2>
-            </div>
-            <div class="conditions">
-                <h3>Current conditions</h3>
-            </div>
-            <div class="logo-box">
-                <img id="logo" title="Southern Skies" src="images/bolt.jpg" alt="Lightning bolt motto">
-            </div>
-        </div>
+        <h1>Southern Skies</h1>
+        <img title="Bolt Logo" src="images/bolt.jpg" alt="Lightning bolt motto">
+        <h2>Where the skies reach your hands.</h2>
+        <h3>Soda Springs: current conditions</h3>
     </header>
     <nav>
-        <ul class="navigation-menu">
+        <ul>
             <li>Home</li>
             <li>Weather</li>
-            <li>Preston</li>
-            <li>Soda Springs</li>
-            <li>Fish Haven</li>
+            <li>City
+                <ul>
+                    <li>Preston</li>
+                    <li>Soda Springs</li>
+                    <li>Fish Haven</li>
+                </ul>
+            </li>
             <li>Storm Center</li>
             <li>Gallery</li>
             <li>Travel</li>
@@ -39,50 +34,34 @@
         </ul>
     </nav>
     <main>
-        <div class="body-title">
-            <h2>Preston</h2>
-        </div>
-        <div class="text">
+        <h2>Preston</h2>
+        <div id="weathersummary">
             <p>The town weather pages contain weather conditions and other town information or relevant
                 articles/content.
                 Images are used to reflect the current weather condition data on the town pages and the towns
-                themselves.
-            </p>
-            <picture>
-                    <source media="(min-width: 650px)" srcset="images/andras-kovacs-392569-unsplash.jpg">
-                    <source media="(min-width: 400px)" srcset="images/jandre-van-der-walt-559177-unsplash.jpg">
-                    <img id="storm" title="Thunder Storm" src="images/simon-rae-480813-unsplash.jpg" alt="Purple Lightning">
-            </picture>    
+                themselves.</p>
+            <img id="storm" title="Thunder Storm" src="images/andras-kovacs-392569-unsplash.jpg" alt="Purple Lightning">
         </div>
-        <div class="body-title">
-            <h2>5 Day Forecast</h2>
+        <div id="forecast">
+            <p>5 Day Forecast</p>
         </div>
-        <article class="text">
-            <img class="image-right" title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
-            <p class="adjust">Filler info. The town weather pages contain weather conditions and other town information or relevant
+        <article id="beach">
+            <p>Filler info. The town weather pages contain weather conditions and other town information or relevant
                 articles/content.
                 Images are used to reflect the current weather condition data on the town pages and the towns
-                themselves.  Filler info. The town weather pages contain weather conditions and other town information or relevant
-                articles/content.
-                Images are used to reflect the current weather condition data on the town pages and the towns
-                themselves.  Filler info. The town weather pages contain weather conditions and other town information or relevant
-                articles/content.
-                Images are used to reflect the current weather condition data on the town pages and the towns
-                themselves.
-            </p>
+                themselves.</p>
+            <img title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
         </article>
-        <div class="text">
-            <img class="image-left" title="Basic Map" src="images/map.jpg" alt="Basic Map">
-            <div class="adjust">
-                <p>Contact Information</p>
-                <p>Phone: 9843-2848</p>
-                <p>Email: southernskies@yahoo.com</p>
-            </div>
+        <br>
+        <div id="contact">
+            <img title="Basic Map" src="images/map.jpg" alt="Basic Map">
+            <p>Contact Information</p>
+            <p>Phone: 9843-2848</p>
+            <p>Email: southernskies@yahoo.com</p>
         </div>
     </main>
     <footer>
-        <p class="title">&copy; Bryan Anderson, <a href="#">Terms of Use</a> CURRENT DATE</p>
-        <a id="index" href="../../index.html">Back to the Index</a>
+        <p>&copy; Bryan Anderson, <a href="#">Terms of Use</a> CURRENT DATE</p>
     </footer>
 </body>
 

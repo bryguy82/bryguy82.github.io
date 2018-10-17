@@ -1,0 +1,172 @@
+/*Weather site CSS*/
+
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+
+header, footer {
+    background-color: #2D426C;
+    padding: 0 15%;
+    font-family: 'dekko', sans-serif;
+}
+
+#header-box {
+    position: relative;
+}
+
+
+.title {
+    color: #DA9DD8;
+    text-align: center;
+    padding: 1em 25% 0 25%;
+}
+
+/*top right box*/
+.conditions {
+    font-size: .9em;
+    color: #DA9DD8;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 80px;
+}
+
+/*logo*/
+.logo-box {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+#logo {
+    align-content: right;
+    width: 6em;
+    max-width: 80px;
+}
+
+#current-conditions {
+    height: 3em;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #BBC0B5;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul {
+    margin: 0 15%;
+    padding: 0;
+}
+
+/*Navigation menu*/
+.navigation-menu li {
+    list-style-type: none;
+    font-size: .8em;
+    font-weight: bold;
+    color: #2D426C;
+    padding: .4em;
+}
+
+main {
+    margin: 0 15%;
+}
+
+.body-title {
+    color: #774577;
+    padding: 1em 2em 1em 2em;
+    border: 5px solid #BBC0B5;
+    text-align: center;
+    margin: 2.5% 15%;
+}
+
+/*LOOK UP TABLES*/
+.forecast {
+    color: #774577;
+    padding: 0 1em;
+    border: 5px solid #BBC0B5;
+    text-align: center;
+    margin: 1em 6em;
+}
+
+#storm {
+    display: block;
+    width: 90%;
+    padding: 1em;
+    margin: 0 5%;
+}
+
+.weather-box {
+    position: relative;
+    color: #2D426C;
+    font-family: 'montserrat', sans-serif;
+    padding: 10px;
+    border: 5px solid #BBC0B5;
+}
+
+#weather-summary {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    background-color: white;
+    width: 40%;
+}
+
+.text {
+    clear: both;
+    color: #2D426C;
+    font-size: 18px;
+    font-family: 'montserrat', sans-serif;
+    padding: 10px;
+    border: 5px solid #BBC0B5;
+    overflow: auto;
+}
+
+table {
+    text-align: center;
+    overflow-x: auto;
+    margin: auto;
+}
+
+tr, th, td {
+    border-bottom: 1px solid #2D426C;
+    padding: .5em 1em;
+}
+
+.label {
+    float: left;
+}
+
+.value {
+    float: left;
+}
+
+.image-left {
+    display: block;
+    padding: 1em;
+    float: left;
+    max-width: 40%;
+}
+
+.image-right {
+    display: block;
+    padding: 1em;
+    float: right;
+    max-width: 40%;
+}

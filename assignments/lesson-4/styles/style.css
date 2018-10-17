@@ -1,205 +1,76 @@
-/*Weather site CSS*/
-
 * {
     margin: 0;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 820px) {
-    .navigation-menu {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .image-left, .image-right {
-        min-width: 200px;
-        display: block;
-        float: left;
-    }
-    .image-right {
-        margin: 0 8em;
-    }
-    .adjust {
-        clear: both;
-    }
-    header h1 {
-        font-size: 1.5em;
-        text-align: center;
-        margin: 0 -8em;
-    }
-    header h2 {
-        font-size: 1em;
-        text-align: center;
-        margin: 0 -8em;
-    }
-    main {
-        margin: 1rem;
-    }
-    .conditions {
-        display: none;
-    }
-    .logo-box {
-        display: none;
-    }
-    .adjust {
-        font-size: .8em;
-    }
-    .body-title {
-        margin-left: 0;
-        margin-right: 0;
-        margin: inherit;
-    }
-}
-
-@media screen and (min-width: 650px) {
-    main {
-        padding: 0 10%;
-    }
-
-}
-@media screen and (max-width: 400px) {
-    header h1 {
-        font-size: .8em;
-        text-align: center;
-        margin: 0 -4em;
-    }
-    header h2 {
-        font-size: .8em;
-        text-align: center;
-        margin: 0 -4em;
-    }
-    .navigation-menu {
-        flex-direction: column;
-        border: none;
-        margin: 0 1em;
-    }
-    .image-right {
-        margin: 0 1em;
-    }
-
-}
-
-body {
-    margin: 1em auto;
-}
-
-header, footer {
-    background-color: #2D426C;
-    padding: 0 2em 1em;
-    font-family: 'dekko', sans-serif;
-}
-
-#header-box {
-    position: relative;
-    margin: 0 3em;
-}
-
-
-.title {
-    color: #DA9DD8;
+main{
+    margin: 1rem auto;
+    padding: 3rem;
+    max-width: auto;
+    margin: 2.5em;
     text-align: center;
-    padding: 1em 25% 0 25%;
 }
 
-/*top right box*/
-.conditions {
-    color: #DA9DD8;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    width: 6em;
-    height: 3em;
+header h3 {
+    text-align: right;
+    height: auto;
 }
 
-/*logo*/
-.logo-box {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    margin: 0px 20px ;
+body header img {
+    float: left;
+    height: auto;
 }
 
-#logo {
-    align-content: right;
-    width: 6em;
-    max-width: 80px;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 1.2em;
+/*Font types*/
+header {
+    font-family: 'dekko', sans-serif;
+    color: #E3B378;
+    text-align: center;
+    padding: 1em;
+    background-color: #132F3D;
 }
 
 nav {
-    background-color: #BBC0B5;
-}
-
-.navigation-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/*Navigation menu*/
-.navigation-menu li {
-    list-style-type: none;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 1.2em;
-    color: #2D426C;
-    height: 45px;
-}
-
-main {
-    margin: 1rem;
-}
-
-.body-title {
-    color: #774577;
-    margin: 1em;
-    padding: 1em 2em 1em 2em;
-    border: 5px solid #BBC0B5;
-    margin-left: 30%;
-    margin-right: 30%;
+    background-color: #132F3D;
+    color: #E19FF9;
     text-align: center;
 }
 
-#storm {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding: 1em;
+body nav ul li {
+    padding: 0em 1.2em;
+    font-family: 'montserrat', sans-serif;
+    display: inline-table;
+    font-size: 18px;
 }
 
-.text {
-    clear: both;
-    color: #2D426C;
+main p {
+    color: #1A3940;
     font-size: 18px;
     font-family: 'montserrat', sans-serif;
-    margin: 1em 0;
-    padding: 10px;
-    border: 5px solid #BBC0B5;
-    overflow: auto;
 }
 
-.image-left {
-    display: block;
+footer {
+    font-family: 'dekko', sans-serif;
+    color: #E3B378;
+    text-align: center;
+    padding: 1em;
+    background-color: #132F3D;
+}
+
+#storm {
+    max-width: 850px;
+    background-position: auto;
+    background-image: initial;
+    padding: 1em;
+}
+#contact img {
     padding: 1em;
     float: left;
-    max-width: 40%;
+    max-width: 300px;
 }
 
-.image-right {
-    display: block;
+#beach img {
     padding: 1em;
     float: right;
-    max-width: 40%;
+    max-width: 300px;
 }
