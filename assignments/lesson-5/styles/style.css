@@ -201,7 +201,7 @@ tr, th, td {
 }
 /*FOOTER*/
 
-.about {
+#about {
     color: #DA9DD8;
     display: inline-block;
     height: 50px;
