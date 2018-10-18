@@ -75,21 +75,3 @@
         padding: 1em;
     }
 }
-
-
-/*
-@media screen and (max-width: 400px) {
-    header h1 {
-        font-size: .8em;
-        text-align: center;
-        margin: 0 -4em;
-    }
-    header h2 {
-        font-size: .8em;
-        text-align: center;
-        margin: 0 -4em;
-    }
-    .image-right {
-        margin: 0 1em;
-    }
-}*/
