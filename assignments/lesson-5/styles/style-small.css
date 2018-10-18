@@ -1,43 +1,83 @@
-@media screen and (max-width: 500px) {
-    .navigation-menu {
-        flex-direction: column;
-    }
-}
+/*Small 360*460 screen*/
 
 @media screen and (max-width: 500px) {
     .image-left, .image-right {
         min-width: 200px;
         display: block;
-        float: left;
     }
     .image-right {
-        margin: 0 8em;
+        margin: 0;
+        width: 100%;
     }
-    .adjust {
-        clear: both;
+    .image-left {
+        max-width: 100%;
     }
     header h1 {
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.3em;
         margin: 0 -8em;
     }
-    header h2 {
-        font-size: 1em;
+    .title h2 {
+        display: inline-block;
+        font-size: smaller;
+        width: 80px;
         text-align: center;
-        margin: 0 -8em;
+    }
+    .navigation-menu {
+        flex-direction: column;
+        border: none;
+        margin: 0 1em;
+    }
+    .title {
+        margin: 5% 0 0 0;
+    }
+    #header-box {
+        height: 100px;
     }
     .conditions {
         display: none;
     }
     .logo-box {
-        display: none;
+        padding: 0;
+        width: 15%;
+        display: contents;
     }
     .adjust {
         font-size: .8em;
     }
+    #logo {
+        margin: 1em;
+        width: 3em;
+    }
+    main, .forecast, article, .text, .body-title {
+        margin: 0;
+    }
+    #weather-summary {
+        font-size: 10px;
+        width: 40%;
+    }
+    .forecast {
+        font-size: 10px;
+    }
+    .text {
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .adjust-contact {
+        width: 100%;
+        font-size: large;
+    }
+    .label-box {
+        height: 80px;
+        padding: 1em;
+    }
+    .value-box {
+        padding: 1em;
+    }
 }
 
-}
+
+/*
 @media screen and (max-width: 400px) {
     header h1 {
         font-size: .8em;
@@ -49,13 +89,7 @@
         text-align: center;
         margin: 0 -4em;
     }
-    .navigation-menu {
-        flex-direction: column;
-        border: none;
-        margin: 0 1em;
-    }
     .image-right {
         margin: 0 1em;
     }
-
-}
+}*/

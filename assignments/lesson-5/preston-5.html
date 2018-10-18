@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Bryan Anderson's weather site for CIT 230 at BYU-I">
+    <meta name="description" content="Preston weather site for Southern Skies">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-small.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -19,11 +19,12 @@
             </div>
             <div class="title">
                 <h1>Southern Skies</h1>
-                <h2>Where the skies reach your hands.</h2>
+                <h2>Where the skies reach your hands</h2>
             </div>
             <div class="conditions">
-                <h3>Current conditions</h3>
                 <img id="current-conditions" src="images/current-weather.jpg" alt="sun and cloud">
+                <h2>Sunny</h2>
+
                      <!--<p id=""></p>-->
             </div>
         </div>
@@ -101,26 +102,30 @@
             </table>
           </section>
         <article class="text">
-            <img class="image-right" title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
             <section class="adjust">
                 <h3>Weather Summary</h3>
-                <div class="weatherdetails">
-                    <p class="label">Currently:</p>
-                    <p class="value">Sunny</p>
-                    <p class="label">Temperature:</p>
-                    <p class="value">76 &deg;F</p>
-                    <p class="label">Humidity:</p>
-                    <p class="value">69%</p>
-                    <p class="label">Precipitation:</p>
-                    <p class="value">0 inches</p>
-                    <p class="label">Wind Speed:</p>
-                    <p class="value">5 mph</p>
+                <div class="weather-details">
+                    <div class="label-box">
+                        <p class="label">Currently:</p>
+                        <p class="label">Temperature:</p>
+                        <p class="label">Humidity:</p>
+                        <p class="label">Precipitation:</p>
+                        <p class="label">Wind Speed:</p>
+                    </div>
+                    <div class="value-box">
+                        <p class="value">Sunny</p>
+                        <p class="value">76 &deg;F</p>
+                        <p class="value">69%</p>
+                        <p class="value">0 inches</p>
+                        <p class="value">5 mph</p>
+                    </div>
+                    <img class="image-right" title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
                 </div>
             </section>
         </article>
         <div class="text">
             <img class="image-left" title="Basic Map" src="images/map.jpg" alt="Basic Map">
-            <div class="adjust">
+            <div class="adjust-contact">
                 <p>Contact Information</p>
                 <p>Phone: 9843-2848</p>
                 <p>Email: southernskies@yahoo.com</p>
@@ -128,8 +133,10 @@
         </div>
     </main>
     <footer>
-        <p class="title">&copy; Bryan Anderson, <a href="#">Terms of Use</a> CURRENT DATE</p>
-        <a id="index" href="../../index.html">Back to the Index</a>
+        <div id="about">
+            <p>&copy; Bryan Anderson <a href="#">Terms of Use</a> CURRENT DATE</p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
     </footer>
 </body>
 
