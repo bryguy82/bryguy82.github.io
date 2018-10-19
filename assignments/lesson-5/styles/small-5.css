@@ -27,6 +27,12 @@
         border: none;
         margin: 0 1em;
     }
+    .navigation-menu li {
+        display: none;
+    }
+    .navigation-menu li:first-child {
+        display: block;
+    }
     .title {
         margin: 5% 0 0 0;
     }
@@ -56,6 +62,7 @@
         width: 40%;
     }
     .forecast {
+        display: none;
         font-size: 10px;
     }
     .text {

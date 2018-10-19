@@ -4,13 +4,13 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: 'montserrat', sans-serif;
+            font-family: 'Dekko', cursive;
 }
 
 /*HEADER START*/
-header, footer {
+header,
+footer {
     background-color: #2D426C;
-    font-family: 'dekko', sans-serif;
 }
 
 #header-box {
@@ -75,11 +75,28 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 ul {
     margin: 0 15%;
     padding: 0;
+}
+
+.navigation-menu li:first-child {
+    display: none;
+}
+
+ul li a {
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+li a:hover {
+    background-color: #DA9DD8;
+    color: #2D426C;
 }
 
 /*Navigation menu*/
@@ -113,7 +130,6 @@ main {
 .weather-box {
     position: relative;
     color: #2D426C;
-    font-family: 'montserrat', sans-serif;
     padding: 10px;
     border: 5px solid #BBC0B5;
 }
@@ -137,7 +153,9 @@ table {
     overflow-x: auto;
     margin: auto;
 }
-tr, th, td {
+tr,
+th,
+td {
     border-bottom: 1px solid #2D426C;
     padding: .5em 1em;
 }
@@ -146,20 +164,14 @@ tr, th, td {
     clear: both;
     color: #2D426C;
     font-size: 18px;
-    font-family: 'montserrat', sans-serif;
     padding: 10px;
     border: 5px solid #BBC0B5;
     overflow: auto;
     margin: 1em auto;
 }
-.adjust h3{
+.text h3{
     text-align: center;
-}/*
-.weather-details {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-}*/
+}
 .label-box, .value-box {
     padding: 2em 0;
     height: 172px;
@@ -211,5 +223,8 @@ tr, th, td {
     text-align: center;
     min-width: 250px;
 }
-
+#about p a,
+#index {
+    color:white;
+}
 /*MAIN END*/
