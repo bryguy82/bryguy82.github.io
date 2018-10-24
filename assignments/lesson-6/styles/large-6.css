@@ -10,7 +10,7 @@
 /*HEADER START*/
 header,
 footer {
-    background-color: #2D426C;
+    background-color: #004D9D;
 }
 
 #header-box {
@@ -23,7 +23,7 @@ footer {
 }
 
 .conditions {
-    color: #DA9DD8;
+    color: #EDF2F6;
     margin: 2em 0;
     padding-right: 15%;
 }
@@ -53,7 +53,7 @@ footer {
 }
 
 .title {
-    color: #DA9DD8;
+    color: #EDF2F6;
     margin: 1em;
     text-align: center;
     min-width: 250px;
@@ -65,7 +65,7 @@ footer {
 /*HEADER END*/
 /*NAVIGATION START*/
 nav {
-    background-color: #BBC0B5;
+    background-color: #63A4D7;
 }
 
 .navigation-menu {
@@ -92,8 +92,8 @@ ul li a {
 }
 
 li a:hover {
-    background-color: #DA9DD8;
-    color: #2D426C;
+    background-color: #A2CEF2;
+    color: #004D9D;
 }
 
 /*Navigation menu*/
@@ -101,7 +101,7 @@ li a:hover {
     list-style-type: none;
     font-size: .8em;
     font-weight: bold;
-    color: #2D426C;
+    color: #EDF2F6;
     padding: .4em;
 }
 /*NAVIGATION END*/
@@ -111,21 +111,20 @@ main {
 }
 /*CITY NAME*/
 .body-title {
-    color: #774577;
+    color: #63A4D7;
     padding: 1em;
     border: 5px solid #BBC0B5;
     text-align: center;
     margin: 2.5% 35%;
 }
 /*HERO BOX*/
-#storm {
+#sunny {
     display: block;
-    padding: 1em;
-    margin: 0 5%;
+    width: 100%;
 }
 .weather-box {
     position: relative;
-    color: #2D426C;
+    color: #004D9D;
     padding: 10px;
     border: 5px solid #BBC0B5;
 }
@@ -138,7 +137,7 @@ main {
 }
 /*FORECAST*/
 .forecast {
-    color: #774577;
+    color: #004D9D;
     padding: 1em;
     border: 5px solid #BBC0B5;
     text-align: center;
@@ -152,13 +151,13 @@ table {
 tr,
 th,
 td {
-    border-bottom: 1px solid #2D426C;
+    border-bottom: 1px solid #004D9D;
     padding: .5em 1em;
 }
 /*WEATHER DETAILS*/
 .text {
     clear: both;
-    color: #2D426C;
+    color: #004D9D;
     font-size: 18px;
     padding: 10px;
     border: 5px solid #BBC0B5;
@@ -207,7 +206,7 @@ td {
 /*FOOTER*/
 
 #about {
-    color: #DA9DD8;
+    color: #EDF2F6;
     display: inline-block;
     height: 50px;
     margin: 1em;
