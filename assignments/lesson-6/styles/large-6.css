@@ -213,9 +213,10 @@ main div.text {
 #index {
     color:white;
 }
-/*MAIN END*/
-.clearfix::after {
-    content: "";
-    display:table;
-    clear: both;
+footer {
+    display: block;
 }
+span#currentdate {
+    display: block;
+}
+/*MAIN END*/
