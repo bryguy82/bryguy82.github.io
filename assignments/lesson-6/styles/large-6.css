@@ -14,7 +14,9 @@ footer {
 }
 
 #header-box {
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -24,18 +26,15 @@ footer {
 
 .conditions {
     color: #EDF2F6;
-    margin: 2em 0;
-    padding-right: 15%;
+    margin: auto 0;
+
 }
 
 #current-conditions {
-    width: 6em;
     max-width: 80px;
 }
-
-.logo-box {
-    margin: 2em 0;
-    padding-left: 24%;
+figure{
+    margin: 0;
 }
 
 .logo-box,
@@ -43,8 +42,6 @@ footer {
   .conditions {
     display: inline-block;
     height: 100px;
-    vertical-align: top;
-    width: 30%;
 }
 
 #logo {
@@ -54,7 +51,7 @@ footer {
 
 .title {
     color: #EDF2F6;
-    margin: 1em;
+    margin: 1em 2em;
     text-align: center;
     min-width: 250px;
 }
@@ -66,9 +63,13 @@ footer {
 /*NAVIGATION START*/
 nav {
     background-color: #63A4D7;
+    color: #004d9d;
 }
-
-.navigation-menu {
+.selected {
+    background-color: #EDF2F6;
+    color: #004D9D;
+}
+.hide {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,11 +77,10 @@ nav {
 }
 
 ul {
-    margin: 0 15%;
     padding: 0;
 }
 
-.navigation-menu li:first-child {
+nav button {
     display: none;
 }
 
@@ -89,6 +89,7 @@ ul li a {
     width: 80px;
     text-align: center;
     padding: 1em 0;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -97,12 +98,11 @@ li a:hover {
 }
 
 /*Navigation menu*/
-.navigation-menu li {
+.hide li {
     list-style-type: none;
     font-size: .8em;
     font-weight: bold;
     color: #EDF2F6;
-    padding: .4em;
 }
 /*NAVIGATION END*/
 /*MAIN START*/
@@ -112,7 +112,7 @@ main {
 /*CITY NAME*/
 .body-title {
     color: #63A4D7;
-    padding: 1em;
+    padding: .5em;
     border: 5px solid #BBC0B5;
     text-align: center;
     margin: 2.5% 35%;
@@ -132,8 +132,22 @@ main {
     position: absolute;
     top: 12%;
     left: 12%;
-    background-color: #BBC0B5;
+    color: #EDF2F6;
     width: 30%;
+    background-color: #3a84dfc4;
+}
+.label-box {
+    max-width: 50%;
+    padding: 1.5em 1em 0 1em;
+}
+.label {
+    float: left;
+}
+p.value {
+    padding: 0 0 .5em 10em;
+}
+.beach-box {
+    padding: 0.5em 1em 0 1em;
 }
 /*FORECAST*/
 .forecast {
@@ -156,7 +170,6 @@ td {
 }
 /*WEATHER DETAILS*/
 .text {
-    clear: both;
     color: #004D9D;
     font-size: 18px;
     padding: 10px;
@@ -167,41 +180,21 @@ td {
 .text h3{
     text-align: center;
 }
-.label-box, .value-box {
-    padding: 2em 0;
-    display: inline-block;
-    vertical-align: top;
-    width: 28%;
-}
-.label-box {
-    height: 172px;
-}
-.value-box {
-    height: 100px;
-}
-.label {
-    width: 120px;
-}
-.value {
-    text-align: center;
-}
-.image-right {
-    display: inline-block;
-    vertical-align: top;
-    padding: 1em;
-    max-width: 315px;
+.weather-details {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-between;
 }
 /*CONTACT INFO*/
-.image-left {
-    display: inline-block;
-    padding: 1em;
-    max-width: 45%;
+main div.text {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-between;
 }
 .adjust-contact {
-    display: inline-block;
-    width: 40%;
     padding: 5%;
-    vertical-align: top;
 }
 /*FOOTER*/
 

@@ -1,27 +1,88 @@
 
+@media screen and (max-width: 1280px) {
+    main {
+        margin: 0 auto;
+        max-width: 950px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     main {
         margin: 0;
     }
     .conditions {
         display: none;
-        font-size: 10px;
+    }
+    .logo-box {
+        width: 80px;
+        height: initial;
+    }
+    figure img {
+        max-width: -webkit-fill-available;
+    }
+    .hide li {
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        width: 100%;
+    }
+    nav button {
+        display: flex;
+        padding: .2rem;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        margin: 0 auto;
+    }
+    nav ul.hide {
+        display: none;
+    }
+    li a:hover {
+        color: #004D9D;
+    }
+    .hide {
+        flex-direction: column;
+        border-top: 1px;
+    }
+    .weather-details {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        text-align: right;
+    }
+    .label-box {
+        min-width: -webkit-fill-available;
+        padding: 1em;
+    }
+    section table {
+        font-size: small;
+    }
+    section.forecast {
+        margin: 0;
+    }
+    .text {
+        margin: 0;
+    }
+    main div.text {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    div.mapouter {
+        align-self: center;
+    }
+    .adjust-contact {
+        text-align: center;
     }
 }
 
 /*Small 360*460 screen*/
 @media screen and (max-width: 500px) {
-    .image-left, .image-right {
-        min-width: 200px;
-        display: block;
-    }
-    .image-right {
-        margin: 0;
-        width: 100%;
-    }
-    .image-left {
-        max-width: 100%;
-    }
+
     header h1 {
         font-size: 1.3em;
         margin: 0 -8em;
@@ -32,19 +93,9 @@
         width: 80px;
         text-align: center;
     }
-    .navigation-menu {
-        flex-direction: column;
-        border: none;
-        margin: 0 1em;
-    }
-    .navigation-menu li {
-        display: none;
-    }
-    .navigation-menu li:first-child {
-        display: block;
-    }
     .title {
         margin: 5% 0 0 0;
+        min-width: 200px;
     }
     #header-box {
         height: 100px;
@@ -53,9 +104,8 @@
         display: none;
     }
     .logo-box {
+        max-width: -webkit-fill-available;
         padding: 0;
-        width: 15%;
-        display: contents;
     }
     .adjust {
         font-size: .8em;
@@ -64,7 +114,11 @@
         margin: 1em;
         width: 3em;
     }
-    main, .forecast, article, .text, .body-title {
+    main,
+    .forecast,
+    article,
+    .text,
+    .body-title {
         margin: 0;
     }
     #weather-summary {
@@ -76,18 +130,13 @@
     }
     .text {
         margin: 0;
-        display: flex;
         flex-direction: column-reverse;
+    }
+    p.value {
+        padding: 0 0 .5em 7em;
     }
     .adjust-contact {
         width: 100%;
         font-size: large;
-    }
-    .label-box {
-        height: 80px;
-        padding: 1em;
-    }
-    .value-box {
-        padding: 1em;
     }
 }

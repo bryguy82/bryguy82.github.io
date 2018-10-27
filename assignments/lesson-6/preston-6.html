@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/large-6.css">
     <link rel="stylesheet" href="styles/small-6.css">
     <link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
     <title>Preston - weather report - current conditions - forecast</title>
 </head>
 
@@ -16,7 +17,9 @@
     <header>
         <div id="header-box">
             <div class="logo-box">
-                <img id="logo" title="Southern Skies" src="images/bolt-one.png" alt="Lightning bolt motto">
+                <figure>
+                    <img src="images/bolt-one.png" alt="bolt logo" srcset="images/bolt-one-100.png 1x, images/bolt-one-200 2x, images/bolt-one-300 3x">
+                </figure>
             </div>
             <div class="title">
                 <h1>Southern Skies</h1>
@@ -25,16 +28,12 @@
             <div class="conditions">
                 <img id="current-conditions" src="images/current-weather.jpg" alt="sun and cloud">
                 <h2>Sunny</h2>
-
-                     <!--<p id=""></p>-->
             </div>
         </div>
     </header>
     <nav>
-        <ul class="navigation-menu">
-            <li>
-                <a href="#">Menu</a>
-            </li>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
             <li>
                 <a href="#">Home</a>
             </li>
@@ -42,7 +41,7 @@
                 <a href="#">Weather</a>
             </li>
             <li>
-                <a href="#">Preston</a>
+                <a class="selected" href="#">Preston</a>
             </li>
             <li>
                 <a href="#">Soda Springs</a>
@@ -57,9 +56,6 @@
                 <a href="#">Gallery</a>
             </li>
             <li>
-                <a href="#">Travel</a>
-            </li>
-            <li>
                 <a href="#">About</a>
             </li>
         </ul>
@@ -70,11 +66,12 @@
         </div>
         <div class="weather-box">
             <picture>
-                <source media="(max-width: 650px)" srcset="images/franklin-medium-pix90.jpg">
                 <source media="(max-width: 400px)" srcset="images/franklin-small-pix97.jpg">
+                <source media="(max-width: 650px)" srcset="images/franklin-medium-pix90.jpg">
                 <img id="sunny" title="Sunny Day" src="images/franklin-original-pix80.jpg" alt="Sunshine">
             </picture>
-            <p id="weather-summary">The town weather pages contain weather conditions and other town information or relevant
+            <p id="weather-summary">The town weather pages contain weather conditions and other town information or
+                relevant
                 articles/content.
                 Images are used to reflect the current weather condition data on the town pages and the towns
                 themselves.
@@ -83,50 +80,61 @@
         <section class="forecast">
             <h3>High Temperature Forecast</h3>
             <table>
-              <thead>
-                <tr>
-                  <th>Day</th>
-                  <th>Wed</th>
-                  <th>Thu</th>
-                  <th>Fri</th>
-                  <th>Sat</th>
-                  <th>Sun</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Forecast</th>
-                  <td>89&deg;F</td>
-                  <td>87&deg;F</td>
-                  <td>78&deg;F</td>
-                  <td>75&deg;F</td>
-                  <td>72&deg;F</td>
-                </tr>
-              </tbody>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                    </tr>
+                </tbody>
             </table>
-          </section>
+        </section>
         <article class="text">
             <h3>Weather Summary</h3>
-                <div class="weather-details">
-                    <div class="label-box">
-                        <p class="label">Currently:</p>
-                        <p class="label">Temperature:</p>
-                        <p class="label">Humidity:</p>
-                        <p class="label">Precipitation:</p>
-                        <p class="label">Wind Speed:</p>
-                    </div>
-                    <div class="value-box">
-                        <p class="value">Sunny</p>
-                        <p class="value">76 &deg;F</p>
-                        <p class="value">69%</p>
-                        <p class="value">0 inches</p>
-                        <p class="value">5 mph</p>
-                    </div>
-                    <img class="image-right" title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
+            <div class="weather-details">
+                <div class="label-box">
+                    <p class="label">Currently:</p>
+                    <p class="value">Sunny</p>
+                    <p class="label">Temperature:</p>
+                    <p class="value">76 &deg;F</p>
+                    <p class="label">Humidity:</p>
+                    <p class="value">69%</p>
+                    <p class="label">Precipitation:</p>
+                    <p class="value">0 inches</p>
+                    <p class="label">Wind Speed:</p>
+                    <p class="value">5 mph</p>
                 </div>
+                <div class="beach-box">
+                    <picture>
+                        <!--source media="(max-width: 400px)" srcset="images/beach-small.jpg"-->
+                        <!--source media="(max-width: 650px)" srcset="images/beach-medium.jpg"-->
+                        <img title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
+                    </picture>
+                </div>
+            </div>
         </article>
         <div class="text">
-            <img class="image-left" title="Basic Map" src="images/map.jpg" alt="Basic Map">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe title="crocothemes.net" id="gmap_canvas" src="https://maps.google.com/maps?q=preston&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <br>
+                    <a href="https://www.crocothemes.net">crocothemes.net</a>
+                </div>
+            </div>
             <div class="adjust-contact">
                 <p>Contact Information</p>
                 <p>Phone: 9843-2848</p>
@@ -136,7 +144,7 @@
     </main>
     <footer>
         <div id="about">
-            <p>&copy; Bryan Anderson <a href="#">Terms of Use</a> CURRENT DATE</p>
+            <p>&copy; Bryan Anderson <a href="#">Terms of Use</a> <span id="currentDate"></span></p>
             <p><a id="index" href="../../index.html">Back to the Index</a></p>
         </div>
     </footer>
