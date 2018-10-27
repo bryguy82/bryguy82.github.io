@@ -168,6 +168,7 @@ td {
     border-bottom: 1px solid #004D9D;
     padding: .5em 1em;
 }
+
 /*WEATHER DETAILS*/
 .text {
     color: #004D9D;
@@ -213,3 +214,8 @@ main div.text {
     color:white;
 }
 /*MAIN END*/
+.clearfix::after {
+    content: "";
+    display:table;
+    clear: both;
+}
