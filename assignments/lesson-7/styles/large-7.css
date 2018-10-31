@@ -177,7 +177,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .label-box {
     max-width: 50%;
@@ -198,7 +198,7 @@ main div.text {
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .adjust-contact {
