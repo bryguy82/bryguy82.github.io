@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Preston weather site for Southern Skies">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/large-7.css">
+    <link type="text/css" rel="stylesheet" href="styles/small-7.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <title>Preston - weather report - current conditions - forecast</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+            <div class="logo-box">
+                <figure>
+                    <img src="images/bolt-one.png" alt="bolt logo" 
+                    srcset="images/bolt-one-100.png 1x, images/bolt-one-200 2x, images/bolt-one-300 3x">
+                </figure>
+            </div>
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands</h2>
+            </div>
+            <div class="conditions">
+                <img id="current-conditions" src="images/current-weather.jpg" alt="sun and cloud">
+                <h2>Sunny</h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="preston-7.html">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a class="selected" href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="gallery-grid">
+            <div class="gallery-1"><img src="images/jorg-714600-unsplash-300.jpg" alt="Field of flowers"></div>
+            <div class="gallery-2"><img src="images/kym-679432-unsplash-300.jpg" alt="Forest sunset"></div>
+            <div class="gallery-3"><img src="images/lucien-kolly-1069829-unsplash-300.jpg" alt="Lightning storm"></div>
+            <div class="gallery-4"><img src="images/nikolas-noonan-682178-unsplash-300.jpg" alt="Tornado in field"></div>
+            <div class="gallery-5"><img src="images/teddy-kelley-188522-unsplash-300.jpg" alt="Snow covered village"></div>
+            <div class="gallery-6"><img src="images/paul-gilmore-258257-unsplash-300.jpg" alt="Wet forest street"></div>
+        </div>
+        <!--Pictures with grid display.  Large view: 3 across, Medium: across, Small: 1 across
+            box-shadow on hovered image on large view-->
+    </main>
+    <footer>
+        <div id="about">
+            <p>&copy; Bryan Anderson <a href="#">Terms of Use</a> <span id="currentDate"></span></p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
+    </footer>    
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

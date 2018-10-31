@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Preston weather site for Southern Skies">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/large-6.css">
-    <link type="text/css" rel="stylesheet" href="styles/small-6.css">
+    <link type="text/css" rel="stylesheet" href="styles/large-7.css">
+    <link type="text/css" rel="stylesheet" href="styles/small-7.css">
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
     <title>Preston - weather report - current conditions - forecast</title>
 </head>
@@ -38,9 +38,6 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">Weather</a>
-            </li>
-            <li>
                 <a class="selected" href="#">Preston</a>
             </li>
             <li>
@@ -53,10 +50,7 @@
                 <a href="#">Storm Center</a>
             </li>
             <li>
-                <a href="#">Gallery</a>
-            </li>
-            <li>
-                <a href="#">About</a>
+                <a href="gallery-7.html">Gallery</a>
             </li>
         </ul>
     </nav>
@@ -109,18 +103,18 @@
                     <p class="label">Currently:</p>
                     <p class="value">Sunny</p>
                     <p class="label">Temperature:</p>
-                    <p class="value">76 &deg;F</p>
+                    <p class="value"><span id="temperature">76</span> &deg;F</p>
                     <p class="label">Humidity:</p>
                     <p class="value">69%</p>
                     <p class="label">Precipitation:</p>
                     <p class="value">0 inches</p>
                     <p class="label">Wind Speed:</p>
-                    <p class="value">5 mph</p>
+                    <p class="value"><span id="windSpeed">5</span> mph</p>
+                    <p class="label">Wind Chill:</p>
+                    <p class="value"><span id="windChill"></span> &deg;F</p>
                 </div>
                 <div class="beach-box">
                     <picture>
-                        <!--source media="(max-width: 400px)" srcset="images/beach-small.jpg"-->
-                        <!--source media="(max-width: 650px)" srcset="images/beach-medium.jpg"-->
                         <img title="Beachgoers" src="images/beach.jpg" alt="Beachgoers">
                     </picture>
                 </div>
@@ -144,12 +138,13 @@
     </main>
     <footer>
         <div id="about">
-            <p>&copy; Bryan Anderson <a href="#">Terms of Use</a> <span id="currentdate"></span></p>
+            <p>&copy; Bryan Anderson <a href="#">Terms of Use</a> <span id="currentDate"></span></p>
             <p><a id="index" href="../../index.html">Back to the Index</a></p>
         </div>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
