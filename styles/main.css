@@ -65,10 +65,3 @@ footer {
     background-color: #eee;
     line-height: 1.5em;
 }
-
-nav ul li {
-    padding: 0em 1em;
-    text-decoration-color: blue;
-    display: inline-table;
-    align-content: center;
-}
