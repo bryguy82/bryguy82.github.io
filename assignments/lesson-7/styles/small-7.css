@@ -6,10 +6,13 @@
     }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 950px) {
     .gallery-grid {
         grid-template-areas: 'num1 num2' 'num4 num5' 'num3 num6';
         justify-items: center;
+    }
+    .gallery-grid figure img:hover {
+        box-shadow: none;
     }
 }
 

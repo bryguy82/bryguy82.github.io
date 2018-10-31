@@ -111,10 +111,14 @@ li a:hover {
     display: grid;
     grid-template-areas: 'num1 num2 num3' 'num4 num5 num6';
     padding: 2em 0;
-    grid-row-gap: 2em;
+    grid-gap: 1.25em;
+    justify-content: center;
 }
-.gallery-grid div {
-    align-self: center;
+figure {
+    margin: 0;
+}
+.gallery-grid figure img:hover {
+    box-shadow: 5px 5px 10px #004D9D;
 }
 
 /*MAIN START*/
