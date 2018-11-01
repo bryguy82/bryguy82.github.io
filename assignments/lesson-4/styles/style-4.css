@@ -18,6 +18,7 @@ header h3 {
 
 body header img {
     float: left;
+    max-width: 100px;
     height: auto;
 }
 
@@ -58,7 +59,7 @@ footer {
 }
 
 #storm {
-    max-width: 850px;
+    max-width: 100%;
     background-position: auto;
     background-image: initial;
     padding: 1em;

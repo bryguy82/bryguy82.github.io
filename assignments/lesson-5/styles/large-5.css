@@ -121,7 +121,7 @@ main {
 #storm {
     display: block;
     padding: 1em;
-    margin: 0 5%;
+    width: 100%;
 }
 .weather-box {
     position: relative;
