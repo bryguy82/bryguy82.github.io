@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Souther Skies - gallery has pictures of regional weather images.">
+    <meta name="description" content="Preston weather site for Southern Skies">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link type="text/css" rel="stylesheet" href="styles/small-8.css">
     <link type="text/css" rel="stylesheet" href="styles/medium-8.css">
     <link type="text/css" rel="stylesheet" href="styles/large-8.css">
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
-    <title>Southern Skies - Gallery - weather pictures - image submissions</title>
+    <title>Preston - weather report - current conditions - forecast</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div id="header-box">
             <div class="logo-box">
                 <figure>
-                    <img src="images/bolt-one.png" alt="bolt logo"
+                    <img src="images/bolt-one.png" alt="bolt logo" 
                     srcset="images/bolt-one-100.png 1x, images/bolt-one-200 2x, images/bolt-one-300 3x">
                 </figure>
             </div>
@@ -39,48 +39,26 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">Fish Haven</a>
-            </li>
-            <li>
-                <a href="preston-8.html">Preston</a>
+                <a class="selected" href="#">Preston</a>
             </li>
             <li>
                 <a href="#">Soda Springs</a>
             </li>
             <li>
-                <a href="stormcenter.html">Storm Center</a>
+                <a href="#">Fish Haven</a>
             </li>
             <li>
-                <a class="selected" href="#">Gallery</a>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery-8.html">Gallery</a>
             </li>
         </ul>
     </nav>
     <main>
-        <div class="gallery-grid">
-            <figure class="gallery">
-                <img src="images/jorg-714600-unsplash-300.jpg" alt="Field of flowers">
-                <figcaption>Summer day in a field of flowers.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/kym-679432-unsplash-300.jpg" alt="Forest sunset">
-                <figcaption>Cloudy sunset in the mountains.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/lucien-kolly-1069829-unsplash-300.jpg" alt="Lightning storm">
-                <figcaption>Purple thunderstorm above rolling hills.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/nikolas-noonan-682178-unsplash-300.jpg" alt="Tornado in field">
-                <figcaption>Thin grey tornado in a field.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/teddy-kelley-188522-unsplash-300.jpg" alt="Snow covered village">
-                <figcaption>Snow covered cabin and village with mountains.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/paul-gilmore-258257-unsplash-300.jpg" alt="Wet forest street">
-                <figcaption>Wet road, trees, and snow capped mountains.</figcaption>
-            </figure>
+        <div class="body-title">
+            <h2>Thank You</h2>
+            <p>Your storm report has been submitted!</p>
         </div>
     </main>
     <footer>
@@ -89,8 +67,10 @@
             <p><span id="currentDate"></span></p>
             <p><a id="index" href="../../index.html">Back to the Index</a></p>
         </div>
-    </footer>    
+    </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,56 @@
+
+
+form {
+    margin: 1em 0;
+    font-size: 20px;
+}
+form fieldset {
+    margin: 1em 0;
+    border: 3px solid #004D9D;
+    border-radius: 10px;
+}
+fieldset legend {
+    text-align: center;
+    padding: 0 15px;
+}
+fieldset label.above {
+    text-align: center;
+}
+form label.side {
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+form label.above input, form label.above select, form label.above textarea  {
+    margin: 0 0 1em;
+    display: block;
+    border-bottom: 4px solid #004D9D;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #A2CEF2;
+    -webkit-appearance: none;
+}
+form label.above input#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    width: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #004D9D;
+    cursor: pointer;
+}
+form label select option:disabled {
+    display: none;
+}
+form label.above textarea {
+    height: 6em;
+}
+form label.above input:required {
+    border-bottom: 4px solid rgb(226, 78, 78);
+}
+form label.above input:required:valid {
+    border-bottom: 4px solid #004D9D;
+}

@@ -1,4 +1,17 @@
 @media screen and (min-width: 650px) {
+    header .title h1 {
+        font-size: 2.5em;
+    }
+    header .title h2 {
+        font-size: 1.7em;
+    }
+    main .body-title h3,
+    main .forecast h3,
+    main .text h3,
+    main .map h3 {
+        font-size: 2em;
+        padding: 1em 0;
+    }
     /*Unhiding objects*/
     .conditions {
         display: flow-root;
@@ -10,21 +23,27 @@
         display: inherit;
         color: #004D9D;
         padding: 1em;
-        border: 5px solid #BBC0B5;
         text-align: center;
     }
     .forecast table {
         display: inline-table;
         border-collapse: collapse;
         border-block-start: inherit;
+        font-size: 1.3em;
         width: 100%;
+    }
+    .label-box {
+        font-size: 1.1em;
     }
     .weather-details, .contact-box {
         flex-direction: row;
         justify-content: space-around;
     }
+    div.weather-details {
+        font-size: 1em;
+    }
     .gallery-grid {
-        grid-template-areas: 'num1 num2' 'num4 num5' 'num3 num6';
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
     .gallery-grid figure img:hover {

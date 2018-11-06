@@ -1,5 +1,14 @@
 @media screen and (min-width: 900px) {
 
+    #header-box,
+    nav ul,
+    main div.weather-box,
+    main article.text,
+    main section,
+    main div.map {
+        max-width: 900px;
+        margin: 0 auto;
+    }
     nav ul.hide {
         display: flex;
         flex-direction: row;
@@ -10,26 +19,25 @@
         display: none;
     }
 
-    main {
-        margin: auto;
-        width: 900px;
-    }
     .body-title {
         width: 250px;
     }
     .body-title,
     .forecast {
-        margin: 1em auto;
+        margin: auto;
     }
     .weather-box,
     article,
     .map {
-        margin: 1em 0;
+        margin: 0;
+    }
+    .article-box {
+        flex-direction: row;
     }
 
     /*GALLERY ONLY*/
     .gallery-grid {
-        grid-template-areas: 'num1 num2 num3' 'num4 num5 num6';
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
         padding: 1em 0;
     }
