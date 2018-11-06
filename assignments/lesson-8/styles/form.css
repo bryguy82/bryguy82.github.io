@@ -1,17 +1,25 @@
 
 
 form {
-    margin: 1em 0;
+    padding: 1em 0;
     font-size: 20px;
 }
-form fieldset {
-    margin: 1em 0;
+form fieldset.name,
+form fieldset.storm-form {
+    padding: 1em 0 0;
     border: 3px solid #004D9D;
     border-radius: 10px;
+}
+form fieldset.name label,
+form fieldset.storm-form label,
+form fieldset div {
+    padding: 0 0 0 .5em;
 }
 fieldset legend {
     text-align: center;
     padding: 0 15px;
+    font-size: 1.2em;
+    background-color: #A2CEF2;
 }
 fieldset label.above {
     text-align: center;
@@ -22,7 +30,9 @@ form label.side {
     padding: 10px;
     width: 100%;
 }
-form label.above input, form label.above select, form label.above textarea  {
+form label.above input,
+form label.above select,
+form label.above textarea  {
     margin: 0 0 1em;
     display: block;
     border-bottom: 4px solid #004D9D;
@@ -31,6 +41,14 @@ form label.above input, form label.above select, form label.above textarea  {
     width: 100%;
     background-color: #A2CEF2;
     -webkit-appearance: none;
+}
+form fieldset.name label:nth-child(6) input {
+    margin: 0;
+}
+form label.above input:hover,
+form label.above select:hover,
+form label.above textarea:hover {
+    box-shadow: 5px 5px 10px #004D9D;
 }
 form label.above input#range::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -53,4 +71,12 @@ form label.above input:required {
 }
 form label.above input:required:valid {
     border-bottom: 4px solid #004D9D;
+}
+form input.submitButton {
+    background-color: #EDF2F6;
+    border: none;
+}
+.radioButton {
+    height: 20px;
+    font-weight: 20px;
 }

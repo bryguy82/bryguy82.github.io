@@ -5,7 +5,9 @@
     main div.weather-box,
     main article.text,
     main section,
-    main div.map {
+    main div.map,
+    main div.gallery-grid,
+    main form {
         max-width: 900px;
         margin: 0 auto;
     }
