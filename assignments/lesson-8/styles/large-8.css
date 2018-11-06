@@ -68,6 +68,7 @@
     form label.above textarea {
         padding: 0 0 0 .5em;
         margin: 0;
+        height: 36px;
     }
     form input.submitButton {
         width: 300px;
