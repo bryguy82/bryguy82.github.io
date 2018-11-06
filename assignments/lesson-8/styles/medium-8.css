@@ -28,7 +28,6 @@
     .forecast table {
         display: inline-table;
         border-collapse: collapse;
-        border-block-start: inherit;
         font-size: 1.3em;
         width: 100%;
     }
