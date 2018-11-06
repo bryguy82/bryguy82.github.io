@@ -43,9 +43,11 @@
     }
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
     }
     .gallery-grid figure img:hover {
         box-shadow: none;
+    }
+    fieldset legend {
+        font-size: 1.7em;
     }
 }

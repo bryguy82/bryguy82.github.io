@@ -11,6 +11,9 @@
         max-width: 900px;
         margin: 0 auto;
     }
+    nav ul{
+        position: initial;
+    }
     nav ul.hide {
         display: flex;
         flex-direction: row;
@@ -21,9 +24,6 @@
         display: none;
     }
 
-    .body-title {
-        width: 250px;
-    }
     .body-title,
     .forecast {
         margin: auto;
@@ -52,5 +52,30 @@
     }
     .gallery-grid figure img:hover {
         box-shadow: 5px 5px 10px #004D9D;
+    }
+    /*FORM ONLY*/
+    form fieldset.name,
+    form fieldset.storm-form {
+        border: none;
+        width: 60%;
+    }
+    fieldset legend {
+        font-size: 2em;
+        text-align: left;
+    }
+    form label.above input,
+    form label.above select,
+    form label.above textarea {
+        padding: 0 0 0 .5em;
+        margin: 0;
+    }
+    form input.submitButton {
+        width: 300px;
+    }
+    form fieldset.storm-form label.side {
+        padding: 0;
+    }
+    form fieldset.storm-form div {
+        font-size: 1.7em;
     }
 }
