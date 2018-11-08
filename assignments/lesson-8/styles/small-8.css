@@ -178,10 +178,14 @@ main .map h3 {
 article h3 {
     text-align: center;
 }
+article h4 {
+    margin: -1.5em 0 1em;
+}
 article.text {
     color: #004D9D;
     font-size: 1.1em;
 }
+
 .article-box {
     display: flex;
     flex-direction: column-reverse;
@@ -290,6 +294,9 @@ form label.above select:hover,
 form label.above textarea:hover {
     box-shadow: 5px 5px 10px #004D9D;
 }
+form label.side:hover {
+    color: black;
+} 
 fieldset label.above #rangeValue {
     width: 2.5em;
 }
@@ -325,5 +332,8 @@ form input.submitButton {
     border-radius: 10px;
     margin: 1em 0 0;
     padding: .5em;
+}
+form input.submitButton:hover {
+    background-color: #63A4D7;
 }
 /*--------END FORM--------*/
