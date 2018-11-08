@@ -68,6 +68,9 @@
     form label.above textarea {
         padding: 0 0 0 .5em;
         margin: 0;
+    }
+    form label.above input,
+    form label.above select {
         height: 36px;
     }
     form input.submitButton {
@@ -78,5 +81,16 @@
     }
     form fieldset.storm-form div {
         font-size: 1.7em;
+    }
+    form label.above input:hover,
+    form label.above select:hover,
+    form label.above textarea:hover {
+        box-shadow: 5px 5px 10px #004D9D;
+    }
+    form label.side:hover {
+        color: black;
+    } 
+    form input.submitButton:hover {
+        background-color: #63A4D7;
     }
 }
