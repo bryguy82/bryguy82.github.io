@@ -79,8 +79,8 @@
                     </datalist>
                 </label>
                 <label class="above">
-                    Storm Severity<input id="range" type="range" name="stormSeverity" min="1" max="10" value="1" onchange="printValue('range','rangeValue')">
-                    <input id="rangeValue" type="text" disabled>
+                    Storm Severity : <span id="rangeValue"></span>
+                    <input id="range" type="range" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
                 </label>
                 <label class="above">Storm Region
                     <select id="region">
