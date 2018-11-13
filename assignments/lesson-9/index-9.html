@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Souther Skies - gallery has pictures of regional weather images.">
+    <meta name="description" content="Preston weather site for Southern Skies, forecast, conditions">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link type="text/css" rel="stylesheet" href="styles/small-9.css">
     <link type="text/css" rel="stylesheet" href="styles/medium-9.css">
     <link type="text/css" rel="stylesheet" href="styles/large-9.css">
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
-    <title>Southern Skies - Regional Weather Gallery - pictures - image submissions</title>
+    <title>Southern Skies - Preston - weather report - current conditions - forecast</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
         <ul id="clickMenu" class="hide">
             <li>
-                <a href="index-9.html">Home</a>
+                <a class="selected" href="#">Home</a>
             </li>
             <li>
                 <a href="#">Fish Haven</a>
@@ -48,40 +48,12 @@
                 <a href="stormcenter-9.html">Storm Center</a>
             </li>
             <li>
-                <a class="selected" href="#">Gallery</a>
+                <a href="gallery-9.html">Gallery</a>
             </li>
         </ul>
     </nav>
     <main>
-        <div class="body-title">
-            <h1>Regional Weather Gallery</h1>
-        </div>
-        <div class="gallery-grid">
-            <figure class="gallery">
-                <img src="images/jorg-714600-unsplash-300.jpg" alt="Field of flowers">
-                <figcaption>Summer day in a field of flowers.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/kym-679432-unsplash-300.jpg" alt="Forest sunset">
-                <figcaption>Cloudy sunset in the mountains.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/lucien-kolly-1069829-unsplash-300.jpg" alt="Lightning storm">
-                <figcaption>Purple thunderstorm above rolling hills.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/nikolas-noonan-682178-unsplash-300.jpg" alt="Tornado in field">
-                <figcaption>Thin grey tornado in a field.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/teddy-kelley-188522-unsplash-300.jpg" alt="Snow covered village">
-                <figcaption>Snow covered cabin and village with mountains.</figcaption>
-            </figure>
-            <figure class="gallery">
-                <img src="images/paul-gilmore-258257-unsplash-300.jpg" alt="Wet forest street">
-                <figcaption>Wet road, trees, and snow capped mountains.</figcaption>
-            </figure>
-        </div>
+
     </main>
     <footer>
         <div id="about">
@@ -89,8 +61,9 @@
             <p><span id="currentDate"></span></p>
             <p><a id="index" href="../../index.html">Back to the Index</a></p>
         </div>
-    </footer>    
+    </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
