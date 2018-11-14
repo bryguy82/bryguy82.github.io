@@ -5,7 +5,7 @@ var preston = document.querySelector("div#preston");
 var sodaSprings = document.querySelector("div#soda-springs");
 
 var weatherSummary = new XMLHttpRequest();
-var url = "https://byui-cit230.github.io/weather/data/towndata.json";
+var url = "//byui-cit230.github.io/weather/data/towndata.json";
 
 weatherSummary.open("GET", url);
 weatherSummary.responseType = 'json';
@@ -77,7 +77,4 @@ weatherSummary.onload = function() {
             }
         }    
     }
-
-    /*document.getElementById("testing").innerHTML = summaryInfo.towns["0"].events;
-*/
 }
