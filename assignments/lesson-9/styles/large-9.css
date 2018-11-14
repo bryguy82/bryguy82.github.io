@@ -53,6 +53,16 @@
     .gallery-grid figure img:hover {
         box-shadow: 5px 5px 10px #004D9D;
     }
+    div.gallery-grid div#fish-haven {
+        grid-area: 2 / 1 ;
+    }
+    div.gallery-grid div#preston {
+        grid-area: 2 / 2;
+    }
+    div.gallery-grid div#soda-springs {
+        grid-area: 2 / 3;
+    }
+
     /*FORM ONLY*/
     form fieldset.name,
     form fieldset.storm-form {

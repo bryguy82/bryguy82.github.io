@@ -144,6 +144,9 @@ main .map h3 {
 .gallery-grid figure img {
     width: auto;
 }
+div.gallery-grid div {
+    padding: 0 0 1em 0;
+}
 
 /*--------HERO BOX--------*/
 #weather-summary {
@@ -259,7 +262,8 @@ form label.side {
 }
 form label.above input,
 form label.above select,
-form label.above textarea {
+form label.above textarea,
+form fieldset.alerts {
     margin: 0 0 1em;
     display: block;
     border-bottom: 4px solid #004D9D;
@@ -325,4 +329,27 @@ form input.submitButton {
     margin: 1em 0 0;
     padding: .5em;
 }
+form fieldset.alerts {
+    margin: 0;
+}
+form fieldset.alerts legend {
+    background-color: #EDF2F6;
+    border-radius: 10px;
+}
+form fieldset.alerts label {
+    display: block;
+}
+/*/*--------JSON/*--------*/
+div#fish-haven p:nth-child(1),
+div#preston p:nth-child(1),
+div#soda-springs p:nth-child(1) {
+    font-size: 2em;
+}
+div#fish-haven,
+div#preston,
+div#soda-springs {
+    text-align: left;
+    max-width: 300px;
+}
+
 /*--------END FORM--------*/
