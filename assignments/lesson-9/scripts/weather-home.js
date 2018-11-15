@@ -77,4 +77,4 @@ weatherSummary.onload = function() {
             }
         }    
     }
-}
+} // removed https to work on Github

@@ -17,4 +17,4 @@ weatherRequest.onload =  function () {
     document.getElementById("weatherIcon").src = icon_location;
     document.getElementById("weatherDescription").innerHTML = weatherDescription;
 
-} // weatherRequest function end
+} // removed http to work on Github
