@@ -6,7 +6,7 @@ weatherSource.open("GET", url, true);
 
 weatherSource.send();
 
-weatherSource.onload = function() {
+weatherSource.onload = function () {
     var weatherInfo = JSON.parse(weatherSource.responseText);
     console.log(weatherInfo);
 
@@ -23,19 +23,3 @@ weatherSource.onload = function() {
     document.getElementById("cityMain").innerHTML = weatherInfo.weather["0"].main;
 
 } // removed http to work on Github
-
-/* Not showing any forecast information
-var forecast = new XMLHttpRequest();
-var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
-
-forecast.open("GET", url, true);
-
-forecast.send();
-
-forecast.onload = function() {
-    var forecastInfo = JSON.parse(forecast.responseText);
-    console.log(forecastInfo);
-
-
-}
-*/

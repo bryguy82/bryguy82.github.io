@@ -85,8 +85,6 @@
                 <thead>
                     <tr>
                         <th>Day</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
                         <th>Wed</th>
                         <th>Thu</th>
                         <th>Fri</th>
@@ -97,13 +95,11 @@
                 <tbody>
                     <tr>
                         <th>Forecast</th>
-                        <td>87&deg;F</td>
-                        <td>88&deg;F</td>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
+                        <td><span id="day1">87</span>&deg;F</td>
+                        <td><span id="day2">88</span>&deg;F</td>
+                        <td><span id="day3">89</span>&deg;F</td>
+                        <td><span id="day4">87</span>&deg;F</td>
+                        <td><span id="day5">85</span>&deg;F</td>
                     </tr>
                 </tbody>
             </table>
@@ -166,6 +162,7 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/weather.js"></script><!--Inserts values from API-->
     <script src="scripts/windchill.js"></script><!--uses those values for the wind chill-->
+    <script src="scripts/weather-forecast.js"></script><!--Inserts forecast values from API-->
 </body>
 
 </html>
