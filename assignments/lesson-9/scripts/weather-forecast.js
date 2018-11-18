@@ -1,6 +1,7 @@
 
 var forecastRequest = new XMLHttpRequest();
-forecastRequest.open("GET", "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial", true);
+var url = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial"
+forecastRequest.open("GET", url, true);
 
 forecastRequest.send();
 
@@ -12,7 +13,7 @@ forecastRequest.onload =  function () {
     var forecastDay = [];
     var number = 0;
     for (var i = 0; i < forecastData.list.length -1; i++) {
-        var day = (forecastData.list[i].dt_txt).includes("09:00:00");
+        var day = (forecastData.list[i].dt_txt).includes("18:00:00");
         if ( day ) {
             forecastDay[number] = forecastData.list[i].main.temp;
             number++;
