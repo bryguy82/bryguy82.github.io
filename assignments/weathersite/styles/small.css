@@ -99,16 +99,18 @@ nav ul li a {
     text-decoration: none;
     padding: 1em;
 }
-li a:hover {
-    background-color: #004D9D;
-    color: #EDF2F6;
+li a.selected {
+    background-color: #A2CEF2;
 }
 li a:visited {
     color: #172703;
 }
-li a.selected {
-    background-color: #A2CEF2;
+li a:hover {
+    background-color: #004D9D;
+    color: #EDF2F6;
 }
+
+
 
 .forecast,
 article,
@@ -129,7 +131,7 @@ main .forecast h3,
 main .text h3,
 main .map h3 {
     font-size: 1.5em;
-    padding: 1em 0;
+    padding: 1em 0 0;
 }
 /*--------Gallery only--------*/
 .gallery-grid {
@@ -155,6 +157,7 @@ div.gallery-grid div {
     left: 7%;
     background-color: #EDF2F6;
     border: 3px solid #004d9d;
+    border-radius: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: .5em 1em;
@@ -181,27 +184,36 @@ div.gallery-grid div {
 article h3 {
     text-align: center;
 }
-article h4 {
-    margin: -1.5em 0 1em;
-}
 article.text {
-    color: #004D9D;
-    font-size: 1.1em;
-}
 
+
+}
 .article-box {
     display: flex;
     flex-direction: column-reverse;
+    padding: 1em;
 }
 .story {
     padding: .5em;
     text-align: start;
 }
+main article.text {
+    border-radius: 1em;
+    color: #EDF2F6;
+    background: #004d9d;
+    font-size: 1.1em;
+}
+main article#article.text {
+    border: 3px solid #004d9d;
+    border-radius: 1em;
+    background-color: #EDF2F6;
+    color: #004D9D;
+}
 /*--------Weather summary end--------*/
 /*--------Event start--------*/
 div#town-events ul {
     list-style-type: none;
-    padding: 0;
+    padding: 1em 0 1em;
 }
 /*--------Event end--------*/
 /*--------Map start--------*/

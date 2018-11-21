@@ -57,6 +57,7 @@
     }
     /*--------Forecast--------*/
     .forecast {
+        padding: 0 0 1em;
         display: grid;
         text-align: center;
     }

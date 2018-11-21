@@ -5,7 +5,7 @@ var preston = document.querySelector("div#preston");
 var sodaSprings = document.querySelector("div#soda-springs");
 
 var weatherSummary = new XMLHttpRequest();
-var url = "//byui-cit230.github.io/weather/data/towndata.json";
+var url = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 weatherSummary.open("GET", url);
 weatherSummary.responseType = 'json';

@@ -10,7 +10,7 @@
     main .text h3,
     main .map h3 {
         font-size: 2em;
-        padding: 1em 0;
+        padding: 1em 0 0;
     }
     header div.conditions img#current-conditions {
         width: 115px;
@@ -25,14 +25,13 @@
     .forecast {
         display: inherit;
         color: #004D9D;
-        padding: 1em;
         text-align: center;
     }
     .forecast table {
         display: inline-table;
-        border-collapse: collapse;
         font-size: 1.3em;
         width: 100%;
+        padding: 1em;
     }
     .label-box {
         font-size: 1.1em;

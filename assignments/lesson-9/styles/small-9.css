@@ -99,15 +99,15 @@ nav ul li a {
     text-decoration: none;
     padding: 1em;
 }
-li a:hover {
-    background-color: #004D9D;
-    color: #EDF2F6;
+li a.selected {
+    background-color: #A2CEF2;
 }
 li a:visited {
     color: #172703;
 }
-li .selected {
-    background-color: #A2CEF2;
+li a:hover {
+    background-color: #004D9D;
+    color: #EDF2F6;
 }
 
 .forecast,
