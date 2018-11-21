@@ -184,9 +184,14 @@ div.gallery-grid div {
 article h3 {
     text-align: center;
 }
-article.text {
-
-
+article a.selected {
+    color: #A2CEF2;
+}
+article a:visited {
+    color: #A2CEF2;
+}
+article a:hover {
+    color: #EDF2F6;
 }
 .article-box {
     display: flex;
