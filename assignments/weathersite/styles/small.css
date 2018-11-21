@@ -1,0 +1,365 @@
+
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Dekko', cursive;
+}
+/*--------Stretch Size for Thank You--------*/
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main {
+    flex-grow: 3;
+}
+main {
+    color: #004D9D;
+    background-color: #A2CEF2;
+}
+/*--------Stretch Size for Thank You--------*/
+/*--------Header start--------*/
+header {
+    padding: 1em 0 1em 0;
+    background-color: #004D9D;
+    color: #EDF2F6;
+    text-align: center;
+}
+header h1 {
+    font-size: 1.8em;
+}
+#header-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title h2 {
+    display: inline-block;
+    font-size: 1em;
+}
+.conditions {
+    display: none;
+    max-width: 115px;
+}
+#current-conditions {
+    max-width: 100%;
+}
+.logo-box {
+    padding: 0;
+}
+.logo-box figure {
+    margin: 0;
+}
+.logo-box figure img {
+    width: 75px;
+}
+.adjust {
+    font-size: .8em;
+}
+#logo {
+    margin: 1em;
+    width: 3em;
+}
+/*--------Header end--------*/
+/*--------Nav start--------*/
+nav {
+    background-color: #63A4D7;
+    color: #004D9D;
+    text-align: center;
+}
+nav button {
+    padding: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    font-size: larger;
+    position: absolute;
+    width: 100%;
+    background-color: #63A4D7;
+    z-index: 1;
+}
+nav ul.hide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+}
+li a:hover {
+    background-color: #004D9D;
+    color: #EDF2F6;
+}
+li a:visited {
+    color: #172703;
+}
+li a.selected {
+    background-color: #A2CEF2;
+}
+
+.forecast,
+article,
+.text,
+.body-title {
+    margin: 0;
+    color: #004d9d;
+    text-align: center;
+}
+.body-title h1 {
+    margin: 0;
+    padding: 1em 0 .6em 0;
+}
+main .body-title h3 {
+    font-size: 2em;
+}
+main .forecast h3,
+main .text h3,
+main .map h3 {
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+/*--------Gallery only--------*/
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.gallery-grid figure {
+    margin: 0;
+    padding: 1em;
+}
+.gallery-grid figure img {
+    width: auto;
+}
+div.gallery-grid div {
+    padding: 0 0 1em 0;
+}
+
+/*--------HERO BOX--------*/
+#weather-summary {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    background-color: #EDF2F6;
+    border: 3px solid #004d9d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5em 1em;
+    padding: .5em; 
+}
+.weather-details {
+    font-size: .8em;
+}
+#hero {
+    width: 100%;
+}
+.weather-box {
+    position: relative;
+    color: #004D9D;
+    padding: 1em .2em;
+}
+/*--------weekly temp start--------*/
+.forecast {
+    display: none;
+}
+/*--------weekly temp end--------*/
+/*--------Weather summary start--------*/
+
+article h3 {
+    text-align: center;
+}
+article h4 {
+    margin: -1.5em 0 1em;
+}
+article.text {
+    color: #004D9D;
+    font-size: 1.1em;
+}
+
+.article-box {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.story {
+    padding: .5em;
+    text-align: start;
+}
+/*--------Weather summary end--------*/
+/*--------Event start--------*/
+div#town-events ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*--------Event end--------*/
+/*--------Map start--------*/
+.map {
+    font-size: 18px;
+    color: #004D9D;
+    padding: 0 0 1em;
+    text-align: center;
+}
+.contact-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center; 
+    font-size: 1.1em;
+}
+.contact {
+    padding: 0 1em 1em 1em
+}
+.map h3 {
+    order: 1;
+}
+.gmap-canvas iframe {
+    /*width: 100%;*/
+    width: 300px;
+    height: 150px;
+}
+/*--------Map end--------*/
+/*--------Footer start--------*/
+footer {
+    background-color: #004D9D;
+    color: #EDF2F6;
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+}
+#about {
+    display: inline-block;
+    margin: 1em;
+}
+#about a:link {
+    color: #EDF2F6;
+}
+#about a:visited {
+    color: #EDF2F6;
+}
+span#currentdate {
+    display: block;
+}
+div.icons img {
+    width: 3em;
+}
+/*-------Footer end--------*/
+/*-------FORM PAGE--------*/
+
+form {
+    padding: 1em 0;
+    font-size: 20px;
+}
+form fieldset.name,
+form fieldset.storm-form {
+    padding: 1em 0 0;
+    border: 3px solid #004D9D;
+    border-radius: 10px;
+}
+form label.side {
+    display: block;
+}
+form label.above input,
+form label.above select,
+form label.above textarea,
+form fieldset.alerts {
+    margin: 0 0 1em;
+    display: block;
+    border-bottom: 4px solid #004D9D;
+    padding: 10px;
+    background-color: #EDF2F6;
+    border-radius: 10px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+label.above #region {
+    -webkit-appearance: listbox;
+}
+form fieldset.name label,
+form fieldset div,
+form fieldset.storm-form label{
+    padding: 0 0 0 .5em;
+}
+form fieldset.storm-form label.side {
+    padding: 1em 0 1em .5em;
+}
+fieldset legend {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 1.2em;
+    background-color: #A2CEF2;
+}
+fieldset label.above {
+    text-align: center;
+}
+fieldset label.above #rangeValue {
+    width: 2.5em;
+}
+form label.above input#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    width: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #004D9D;
+    cursor: pointer;
+}
+input#range {
+    -webkit-appearance: none;
+}
+form label select option:disabled {
+    display: none;
+}
+form label.above textarea {
+    height: 6em;
+}
+form label.above input:required {
+    border-bottom: 4px solid rgb(226, 78, 78);
+}
+form label.above input:required:valid {
+    border-bottom: 4px solid #004D9D;
+}
+form input.submitButton {
+    -webkit-appearance: button;
+    width: 100%;
+    background-color: #EDF2F6;
+    border-radius: 10px;
+    margin: 1em 0 0;
+    padding: .5em;
+}
+form fieldset.alerts {
+    margin: 0;
+}
+form fieldset.alerts legend {
+    background-color: #EDF2F6;
+    border-radius: 10px;
+}
+form fieldset.alerts label {
+    display: block;
+}
+/*/*--------JSON/*--------*/
+div#fish-haven p:nth-child(1),
+div#preston p:nth-child(1),
+div#soda-springs p:nth-child(1) {
+    font-size: 2em;
+}
+div#fish-haven,
+div#preston,
+div#soda-springs {
+    text-align: left;
+    max-width: 300px;
+}
+
+/*--------END FORM--------*/

@@ -1,0 +1,32 @@
+@media screen and (min-width: 900px) {
+    /*--------Page layout--------*/
+    body {
+        grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'main main main'
+            'footer footer footer';
+    }
+    #header-box,
+    nav ul,
+    main div.weather-box,
+    main article.text,
+    main section,
+    main div.map,
+    main div.gallery-grid,
+    main form {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    nav ul#clickMenu.hide {
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    nav ul li a {
+        width: auto;
+    }
+
+    div.weather-box {
+        grid-template-columns: .4fr 1.5fr 4fr;
+    }
+}
