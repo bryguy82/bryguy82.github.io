@@ -137,6 +137,7 @@ main .map h3 {
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
     justify-items: center;
 }
 .gallery-grid figure {
@@ -148,6 +149,9 @@ main .map h3 {
 }
 div.gallery-grid div {
     padding: 0 0 1em 0;
+}
+main div.gallery-grid figure figcaption {
+    font-size: 1.5em;
 }
 
 /*--------HERO BOX--------*/
