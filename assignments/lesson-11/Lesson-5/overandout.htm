@@ -7,35 +7,7 @@
 	<meta name="description" content="Hover box colors">
 	<link rel="stylesheet" href="styles/overandout.css">
 	<link rel="stylesheet" href="../Lesson-2/styles/link.css">
-	<!--script src="scripts/jquery-2.2.1.min.js"></script-->
-	<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
-	<script>
-		$(function () {
 
-			// This function returns a random colour from the given array everytime that it is invoked.
-			function randomize() {
-				var colors = ['Red', 'Green', 'Yellow', 'Blue', 'Purple']
-				return colors[parseInt(Math.random() * colors.length)];
-			}
-
-			// Your jQuery Code goes here
-			// mouseover
-			$(".outerOne").on("mouseover", function () {
-				$(this).css("background-color", randomize);
-			})
-			$(".innerOne").on("mouseover", function () {
-				$(this).css("background-color", randomize);
-			})
-
-			//mouseenter
-			$(".outerTwo").on("mouseenter", function () {
-				$(this).css("background-color", randomize);
-			})
-			$(".innerTwo").on("mouseenter", function () {
-				$(this).css("background-color", randomize);
-			})
-		})
-	</script>
 </head>
 
 <body>
@@ -68,7 +40,35 @@
 		<a href="#">Lesson-5 over and out</a>
 		<a href="../Lesson-5/spotthesymbol.htm">Lesson-5 symbol hunt</a>
 	</div>
+	<!--script src="scripts/jquery-2.2.1.min.js"></script-->
+	<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script>
+		$(function () {
 
+			// This function returns a random colour from the given array everytime that it is invoked.
+			function randomize() {
+				var colors = ['Red', 'Green', 'Yellow', 'Blue', 'Purple']
+				return colors[parseInt(Math.random() * colors.length)];
+			}
+
+			// Your jQuery Code goes here
+			// mouseover
+			$(".outerOne").on("mouseover", function () {
+				$(this).css("background-color", randomize);
+			})
+			$(".innerOne").on("mouseover", function () {
+				$(this).css("background-color", randomize);
+			})
+
+			//mouseenter
+			$(".outerTwo").on("mouseenter", function () {
+				$(this).css("background-color", randomize);
+			})
+			$(".innerTwo").on("mouseenter", function () {
+				$(this).css("background-color", randomize);
+			})
+		})
+	</script>
 </body>
 
 </html>
