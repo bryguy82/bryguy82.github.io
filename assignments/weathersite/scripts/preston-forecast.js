@@ -8,7 +8,7 @@ forecastRequest.send();
 forecastRequest.onload =  function () {
     
     var forecastData = JSON.parse(forecastRequest.responseText);
-    console.log(forecastData);
+    //console.log(forecastData);
 
     var forecastDay = [];
     var number = 0;

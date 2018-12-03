@@ -8,7 +8,7 @@ weatherSource.send();
 
 weatherSource.onload = function () {
     var weatherInfo = JSON.parse(weatherSource.responseText);
-    console.log(weatherInfo);
+    //console.log(weatherInfo);
 
     document.getElementById("currently").innerHTML = weatherInfo.weather["0"].description;
     document.getElementById("cityTemp").innerHTML = weatherInfo.main.temp;

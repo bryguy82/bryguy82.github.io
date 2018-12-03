@@ -10,7 +10,7 @@ eventSummary.responseType = 'json';
 eventSummary.send();
 eventSummary.onload = function() {
     var eventInfo = eventSummary.response;
-    console.log(eventInfo);
+    //console.log(eventInfo);
 
     insertWeatherData(eventInfo);
 

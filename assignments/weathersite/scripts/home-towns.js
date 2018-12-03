@@ -12,7 +12,7 @@ weatherSummary.responseType = 'json';
 weatherSummary.send();
 weatherSummary.onload = function() {
     var summaryInfo = weatherSummary.response;
-    console.log(summaryInfo);
+    //console.log(summaryInfo);
 
     insertWeatherData(summaryInfo);
 
