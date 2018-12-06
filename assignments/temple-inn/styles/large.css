@@ -1,0 +1,65 @@
+@media screen and (min-width: 900px) {
+    
+    div.temple-icon2 {
+        display: contents;
+    }
+    div.temple-icon2 img {
+        width: 60px;
+    }
+    div.navbutton {
+        display: none;
+    }
+    nav.hide {
+        display: grid;
+    }
+
+    header {
+        grid-area: head;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: foot;
+    }
+
+    body {
+        display: grid;
+        grid-template-areas:
+            'head head head head'
+            'nav main main main'
+            'nav main main main'
+            'foot foot foot foot';
+    }
+
+    nav#menu.hide ul {
+        margin: 0;
+        box-shadow: none;
+        position: unset;
+        z-index: unset;
+        grid-auto-rows: 3em;
+        background-color: #997F62;
+    }
+    nav#menu ul a:hover,
+    nav#menu ul li a.selected:hover {
+        background-color: #8492AC;
+        color: #FFFFFF;
+    }
+    div.pictures {
+        grid-template-columns: 40px 3fr 40px;
+        grid-template-rows: 1fr 40px 1fr 30px 10px;
+        max-width: 600px;
+    }
+    div.right button, div.left button {
+        width: 40px;
+        height: 40px;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}

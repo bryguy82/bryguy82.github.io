@@ -1,0 +1,20 @@
+@media screen and (min-width: 650px) {
+    
+    div.temple-icon {
+        display: contents;
+    }
+    div.temple-icon img {
+        width: 60px;
+    }
+    body header {
+        grid-template-columns: 1fr 3.5fr 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 1em;
+    }
+
+    nav#menu ul {
+        margin: 0 0 0 70%;
+    }
+    
+}

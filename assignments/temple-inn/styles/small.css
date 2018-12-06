@@ -1,0 +1,160 @@
+
+* {
+    font-family: 'Headland One', serif;
+}
+*, h1, h2, h3 {
+    margin: 0;
+}
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*picture and icon size*/
+picture img,
+div.pictures.fade img {
+    width: 100%;
+}
+div.icons a img {
+    width: 3em;
+}
+/*background and text colors*/
+header,
+div#reservation,
+footer {
+    background-color: #E6A71C;
+}
+
+/*header*/
+header {
+    display: grid;
+    text-align: center;
+}
+div.site-title {
+    padding: 1em 1em 0;
+}
+div.navbutton {
+    text-align: end;
+}
+div.navbutton button {
+    border: none;
+    background-color: transparent;
+    font-size: 2.2em;
+    padding: 0 0.5em;
+}
+/*hidden on small*/
+div.temple-icon,
+div.temple-icon2 {
+    display: none;
+}
+nav.hide {
+    display: none;
+}
+nav#menu ul {
+    display: grid;
+    padding: 1em;
+    margin: 0 0 0 50%;
+    text-align: right;
+    grid-gap: 1em;
+    background-color: #E6A71C;
+    box-shadow: 5px 5px 10px #6D5B2D;
+    position: absolute;
+    z-index: 1;
+}
+ul li {
+    list-style-type: none;
+}
+nav#menu ul li a {
+    text-decoration: none;
+    padding: .5em;
+    display: block;
+    width: 120px;
+}
+nav#menu ul li a.selected {
+    background-color: #FFFFFF;
+}
+nav#menu ul li a:active {
+    background-color: #8492AC;
+    color: #000000;
+}
+/*home article*/
+div#mesa h2,
+div#mesa h3,
+article.activities h2 {
+    text-align: center;
+    padding: .5em;
+    color: #6D5B2D;
+}
+div#mesa p,
+article p {
+    padding: 1em;
+}
+div#reservation {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    align-items: center;
+    padding: 1em;
+}
+div#reserve-button {
+    background-color: #8492AC;
+    border-radius: 1em;
+    padding: .5em 1em;
+    box-shadow: 5px 5px 5px #6D5B2D;
+    text-align: center;
+}
+ol {
+    padding: 0 1em 1em 2em;
+}
+/*carousel box*/
+div.carousel-text {
+    background-color: #8492AC;
+    text-align: center;
+    border-radius: 1em;
+    padding: .5em;
+}
+div.carousel {
+    background-color: #E1B88B;
+}
+div.right button,
+div.left button {
+    border: none;
+    background-color: #8492AC;
+    width: 30px;
+    height: 30px;
+}
+div.pictures {
+    display: grid;
+    grid-template-columns: 30px 3fr 30px;
+    grid-template-rows: 2fr 30px 1fr 30px 10px;
+    align-items: center;
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto -3px;
+}
+div.picture-grid {
+    grid-area: 1 / 1 / 6 / 4;
+}
+div.carousel-text {
+    grid-area: 4 / 2 / 5 / 3;
+}
+div.left {
+    grid-area: 2 / 1 / 3 / 2;
+}
+div.right {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+
+footer {
+    display: grid;
+    text-align: center;
+    padding: 1em;
+    grid-gap: 1em;
+}
+
+
