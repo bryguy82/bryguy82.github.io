@@ -120,6 +120,35 @@ ol {
     from {opacity: .3} 
     to {opacity: 1}
 }
+/*temple page*/
+.hide-tucson {
+    display: none;
+}
+.hide-phoenix {
+    display: none;
+}
+.hide-gilbert {
+    display: none;
+}
+.hide-gila {
+    display: none;
+}
+div.temple-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.temple-image picture {
+    grid-area: 1 / 1 / 3 / 3;
+}
+div.click-right button,
+div.click-left button {
+    border: none;
+    width: 100%;
+    background-color: #8492AC;
+    padding: .5em;
+    margin: -3px 0 0 0;
+}
+
 /*carousel box*/
 div.carousel-text {
     background-color: #8492AC;

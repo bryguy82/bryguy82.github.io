@@ -1,20 +1,20 @@
 
-var tucson = document.querySelector("temple-tucson");
-var phoenix = document.querySelector("temple-phoenix");
-var gilbert = document.querySelector("temple-gilbert");
-var gila = document.querySelector("temple-gila");
+var tucson = document.querySelector(".temple-tucson");
+var phoenix = document.querySelector(".temple-phoenix");
+var gilbert = document.querySelector(".temple-gilbert");
+var gila = document.querySelector(".temple-gila");
 
 
 var temples = new XMLHttpRequest();
-var url = "//data/templedata.json";
+var url = "https://bryguy82.github.io/assignments/temple-inn/data/templedata.json";
 
 temples.open("GET", url);
 
 temples.responseType = "json";
-//temples.send();
+temples.send();
 temples.onload = function() {
-    var data = JSON.parse(temples.responseText);
-    console.log(data);
+    var data = temples.response;
+    //console.log(data);
 
     getWeatherData(data);
 
@@ -27,19 +27,20 @@ temples.onload = function() {
             var ul = document.createElement("ul");
 
             var templeClosures = templeData[i].closures;
+
             for (j = 0; j < templeClosures.length; j++) {
                 var dates = document.createElement("li");
                 dates.textContent = templeClosures[j];
                 ul.appendChild(dates);
             }
 
-            if (templeData.name == "Tucson") {
+            if (templeData[i].name == "Tucson") {
                 tucson.appendChild(ul);
-            } else if (templeData.name == "Phoenix") {
+            } else if (templeData[i].name == "Phoenix") {
                 phoenix.appendChild(ul);
-            } else if (templeData.name == "Gilbert") {
+            } else if (templeData[i].name == "Gilbert") {
                 gilbert.appendChild(ul);
-            } else {
+            } else if (templeData[i].name == "Gila Valley") {
                 gila.appendChild(ul);
             }
         }
