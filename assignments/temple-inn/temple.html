@@ -32,7 +32,7 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a class="selected" href="#">Temple</a>
+                <a class="selected" href="#">Temples</a>
             </li>
             <li>
                 <a href="reservation.html">Reservation</a>
@@ -46,27 +46,329 @@
         </ul>
     </nav>
     <main>
-        <div class="temple-info">
-            <div class="temple-image">
-                <picture>
-                    <img>
-                </picture>
+        <div class="temple-box">
+            <div class="temple-info">
+                <div class="temple-image">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/tucson-arizona-temple2-400-93.jpg">
+                        <source media="(max-width: 650px)" srcset="images/tucson-arizona-temple2-600-70.jpg">
+                        <img src="images/tucson-arizona-temple2-400-93.jpg" alt="Tucson Arizona Temple">
+                    </picture>
+                    <div class="click-left">
+                        <button onclick="moveSlides(-1)">&#10094;</button>
+                    </div>
+                    <div class="click-right">
+                        <button onclick="moveSlides(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="temple-text">
+                    <h2>Tucson Arizona Temple Information</h2>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>7281 North Skyline Dr, Tucson, AZ 85718</li>
+                    </ul>
+                    <h4>Phone Number</h4>
+                    <ul>
+                        <li>(1) 520-395-3900</li>
+                    </ul>
+                    <h4>Email</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.lds.org/temples/details/tucson-arizona-temple?lang=eng">Click Here</a></h4>
+                        </li>
+                    </ul>
+                    <div class="weather">
+                        <!--Weather data here-->
+                    </div>
+                    <div class="temple-closures">
+                        <!--JSON data drop down here-->
+                    </div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>No clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                    <h3>History</h3>
+                    <ul>
+                        <li>October 6, 2012: Announced</li>
+                        <li>October 17, 2015: Groundbreaking</li>
+                        <li>August 13, 2017: Dedicated</li>
+                    </ul>
+                    <h3>Schedule for Ordinances</h3>
+                    <h4>Baptism</h4>
+                    <ul>
+                        <li>Family
+                            <ul>
+                                <li>Friday: 6:00 PM - 8:30 PM</li>
+                                <li>Saturday: 10:00 AM - 12:00 PM</li>
+                                <li>Saturday: 4:00 PM - 7:00 PM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Church Group
+                            <ul>
+                                <li>Tuesday: 6:00 PM - 8:30 PM</li>
+                                <li>Wednesday: 6:00 AM - 8:30 PM</li>
+                                <li>Saturday: 6:00 AM - 10:00 AM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Initiatory</h4>
+                    <ul>
+                        <li>Please call the temple for initiatory information</li>
+                    </ul>
+                    <h4>Endowment</h4>
+                    <ul>
+                        <li>6:30 AM, 7:30 AM, 8:30 AM, 10:00 AM, 11:00 AM, 12:30 PM, 4:00 PM,
+                            5:00 PM, 6:30 PM, 7:30 PM</li>
+                    </ul>
+                    </li>
+                    <h4>Sealing</h4>
+                    <ul>
+                        <li>Please call the temple for sealing information</li>
+                    </ul>
+                </div>
             </div>
-            <div class="temple-closures">
-
+            <div class="temple-info">
+                <div class="temple-image">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/phoenix-arizona-temple2-400-95.jpg">
+                        <source media="(max-width: 650px)" srcset="images/phoenix-arizona-temple2-600-80.jpg">
+                        <img src="images/phoenix-arizona-temple2-400-95.jpg" alt="Phoenix Arizona Temple">
+                    </picture>
+                    <div class="click-left">
+                        <button onclick="moveSlides(-1)">&#10094;</button>
+                    </div>
+                    <div class="click-right">
+                        <button onclick="moveSlides(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="temple-text">
+                    <h2>Phoenix Arizona Temple Information</h2>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>5220 W Pinnacle Peak Rd, Phoenix, AZ 85310</li>
+                    </ul>
+                    <h4>Phone Number</h4>
+                    <ul>
+                        <li>(1) 623-474-9500</li>
+                    </ul>
+                    <h4>Email</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng">Click Here</a></h4>
+                        </li>
+                    </ul>
+                    <div class="weather">
+                        <!--Weather data here-->
+                    </div>
+                    <div class="temple-closures">
+                        <!--JSON data drop down here-->
+                    </div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>No clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>No distribution center nearby</li>
+                    </ul>
+                    <h3>History</h3>
+                    <ul>
+                        <li>May 9, 2008: Announced</li>
+                        <li>June 4, 2011: Groundbreaking</li>
+                        <li>November 16, 2014: Dedicated</li>
+                    </ul>
+                    <h3>Schedule for Ordinances</h3>
+                    <h4>Baptism</h4>
+                    <ul>
+                        <li>Family
+                            <ul>
+                                <li>Saturday: 4:00 PM - 7:00 PM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Initiatory</h4>
+                    <ul>
+                        <li>Please call the temple for initiatory information</li>
+                    </ul>
+                    <h4>Endowment</h4>
+                    <ul>
+                        <li>7:30 AM, 9:00 AM, 10:30 AM, 4:30 PM, 6:00 PM, 7:30 PM</li>
+                    </ul>
+                    </li>
+                    <h4>Sealing</h4>
+                    <ul>
+                        <li>Please call the temple for sealing information</li>
+                    </ul>
+                </div>
             </div>
-            <div class="temple-text">
-
+            <div class="temple-info">
+                <div class="temple-image">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/gilbert-arizona-temple2-400-95.jpg">
+                        <source media="(max-width: 650px)" srcset="images/gilbert-arizona-temple2-600-85.jpg">
+                        <img src="images/gilbert-arizona-temple2-400-95.jpg" alt="Gilbert Arizona Temple">
+                    </picture>
+                    <div class="click-left">
+                        <button onclick="moveSlides(-1)">&#10094;</button>
+                    </div>
+                    <div class="click-right">
+                        <button onclick="moveSlides(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="temple-text">
+                    <h2>Gilbert Arizona Temple Information</h2>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>3301 S Greenfield Rd, Gilbert, AZ 85297</li>
+                    </ul>
+                    <h4>Phone Number</h4>
+                    <ul>
+                        <li>(1) 480-822-5000</li>
+                    </ul>
+                    <h4>Email</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.lds.org/temples/details/gilbert-arizona-temple?lang=eng">Click Here</a></h4>
+                        </li>
+                    </ul>
+                    <div class="weather">
+                        <!--Weather data here-->
+                    </div>
+                    <div class="temple-closures">
+                        <!--JSON data drop down here-->
+                    </div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                    <h3>History</h3>
+                    <ul>
+                        <li>April 10, 2008: Announced</li>
+                        <li>November 13, 2010: Groundbreaking</li>
+                        <li>March 2, 2014: Dedicated</li>
+                    </ul>
+                    <h3>Schedule for Ordinances</h3>
+                    <h4>Baptism</h4>
+                    <ul>
+                        <li>Family
+                            <ul>
+                                <li>Friday: 4:00 PM - 8:30 PM</li>
+                                <li>Saturday: 4:00 AM - 8:30 PM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Church Group
+                            <ul>
+                                <li>Tuesday: 4:00 PM - 8:30 PM</li>
+                                <li>Wednesday: 4:00 AM - 8:30 PM</li>
+                                <li>Saturday: 5:30 AM - 11:00 AM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Initiatory</h4>
+                    <ul>
+                        <li>Please call the temple for initiatory information</li>
+                    </ul>
+                    <h4>Endowment</h4>
+                    <ul>
+                        <li>5:30 AM, 6:15 AM, 7:00 AM, 7:45 AM, 8:30 AM, 9:15 AM, 10:00 AM, 10:45 AM,
+                            11:30 AM, 12:15 PM, 1:00 PM, 1:45 PM, 2:30 PM, 3:15 PM, 4:00 PM, 4:45 PM,
+                            5:30 PM, 6:15 PM, 7:00 PM, 7:30 PM</li>
+                    </ul>
+                    </li>
+                    <h4>Sealing</h4>
+                    <ul>
+                        <li>Please call the temple for sealing information</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="click-left">
-                <button onclick="moveSlides(-1)">&#10094;</button>
-            </div>
-            <div class="click-right">
-                <button onclick="moveSlides(1)">&#10095;</button>
+            <div class="temple-info">
+                <div class="temple-image">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/gila-valley-temple2-400-90.jpg">
+                        <source media="(max-width: 650px)" srcset="images/gila-valley-temple2-600-80.jpg">
+                        <img src="images/gila-valley-temple2-400-90.jpg" alt="The Gila Valley Arizona Temple">
+                    </picture>
+                    <div class="click-left">
+                        <button onclick="moveSlides(-1)">&#10094;</button>
+                    </div>
+                    <div class="click-right">
+                        <button onclick="moveSlides(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="temple-text">
+                    <h2>The Gila Valley Arizona Temple Information</h2>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>5291 W Highway 70, Central, AZ 85531</li>
+                    </ul>
+                    <h4>Phone Number</h4>
+                    <ul>
+                        <li>(1) 928-428-7243</li>
+                    </ul>
+                    <h4>Email</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.lds.org/temples/details/the-gila-valley-arizona-temple?lang=eng">Click
+                                Here</a></h4>
+                        </li>
+                    </ul>
+                    <div class="weather">
+                        <!--Weather data here-->
+                    </div>
+                    <div class="temple-closures">
+                        <!--JSON data drop down here-->
+                    </div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li>No clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                    <h3>History</h3>
+                    <ul>
+                        <li>April 26, 2008: Announced</li>
+                        <li>February 14, 2009: Groundbreaking</li>
+                        <li>May 23, 2010: Dedicated</li>
+                    </ul>
+                    <h3>Schedule for Ordinances</h3>
+                    <h4>Baptism</h4>
+                    <ul>
+                        <li>Family
+                            <ul>
+                                <li>Friday: 4:00 PM - 8:00 PM</li>
+                                <li>Saturday: 4:00 PM - 8:00 PM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Church Group
+                            <ul>
+                                <li>Tuesday: 8:00 AM - 8:00 PM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Initiatory</h4>
+                    <ul>
+                        <li>Please call the temple for initiatory information</li>
+                    </ul>
+                    <h4>Endowment</h4>
+                    <ul>
+                        <li>8:00 AM, 10:00 AM, 12:00 PM, 2:00 PM, 4:00 PM, 5:30 PM, 7:00 PM</li>
+                    </ul>
+                    </li>
+                    <h4>Sealing</h4>
+                    <ul>
+                        <li>Please call the temple for sealing information</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
     </main>
     <footer>
         <div class="icons">
@@ -83,27 +385,9 @@
         </div>
     </footer>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/carousel.js"></script>
+    <script src="scripts/carousel2.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="data/templedata.json"></script>    
 </body>
 
 </html>
-
-Tucson
-"address": "7281 North Skyline Dr, Tucson, AZ 85718",
-"phone": "(1) 520-395-3900",
-"email": "<a href="https://www.lds.org/temples/details/tucson-arizona-temple?lang=eng">email </a>", 
-"services" :
-    "No clothing rental available" "No cafeteria available" "No patron housing available" "Distribution center nearby"
-    "history" : "October 6, 2012: Announced" "October 17, 2015: Groundbreaking" "August 13, 2017: Dedicated" 
-    "schedule"
-    : "ordinance" : "baptism" : "family" : "Friday: 6:00 PM - 8:30 PM" "Saturday: 10:00 AM - 12:00 PM"
-    "Saturday: 4:00 PM - 7:00 PM" "churchgroup" : "Tuesday: 6:00 PM - 8:30 PM" "Wednesday: 6:00 AM - 8:30 PM"
-    "Saturday: 6:00 AM - 10:00 AM" "initiatory" : "Please call the temple for initiatory times." 
-    "endowment" :
-    "6:30 AM, 7:30 AM, 8:30 AM, 10:00 AM, 11:00 AM, 12:30 PM, 4:00 PM, 5:00 PM, 6:30 PM, 7:30 PM" 
-    "sealing" :
-    "For sealing information, call the temple" 
-    https://www.lds.org/temples/details/the-gila-valley-arizona-temple?lang=eng
-    https://www.lds.org/temples/details/gilbert-arizona-temple?lang=eng 
-    https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng
-    ABOUT https://churchofjesuschristtemples.org/about/ templedata.js

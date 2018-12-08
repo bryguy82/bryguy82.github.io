@@ -17,7 +17,7 @@ a:active {
 
 /*picture and icon size*/
 picture img,
-div.pictures.fade img {
+div.pictures img {
     width: 100%;
 }
 div.icons a img {
@@ -110,6 +110,16 @@ div#reserve-button {
 ol {
     padding: 0 1em 1em 2em;
 }
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s; 
+}
+  
+@keyframes fade {
+    from {opacity: .3} 
+    to {opacity: 1}
+}
 /*carousel box*/
 div.carousel-text {
     background-color: #8492AC;
@@ -148,7 +158,6 @@ div.left {
 div.right {
     grid-area: 2 / 3 / 3 / 4;
 }
-
 
 footer {
     display: grid;
