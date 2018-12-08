@@ -1,31 +1,46 @@
 
-var templeinfo = new XMLHttpRequest();
-var file = "../data/templedata.json";
+var tucson = document.querySelector("temple-tucson");
+var phoenix = document.querySelector("temple-phoenix");
+var gilbert = document.querySelector("temple-gilbert");
+var gila = document.querySelector("temple-gila");
 
-var closurelist = document.getElementById("ul#closures");//sdfsdfasdf
 
-templeinfo.open("GET", file);
-templeinfo.responseType = 'json';
-templeinfo.send();
-templeinfo.onload = function() {
-    var closure = templeinfo.response;
-    console.log(closure);
+var temples = new XMLHttpRequest();
+var url = "//data/templedata.json";
 
-    getClosureInfo(closure);
+temples.open("GET", url);
 
-    function getClosureInfo(object){
+temples.responseType = "json";
+//temples.send();
+temples.onload = function() {
+    var data = JSON.parse(temples.responseText);
+    console.log(data);
 
-        var temples = object.temples;
+    getWeatherData(data);
 
-        for (i = 0; i < temples.length; i++) {
+    function getWeatherData(info) {
 
-            var schedule = temples[i].closures;
+        var templeData = info.temples;
 
-            for (j = 0; j < schedule.length; j++) {
+        for (i = 0; i < templeData.length; i++) {
 
-                var list = document.createElement("li");
-                list.textContent = schedule[j];
-                closurelist.appendChild(list);
+            var ul = document.createElement("ul");
+
+            var templeClosures = templeData[i].closures;
+            for (j = 0; j < templeClosures.length; j++) {
+                var dates = document.createElement("li");
+                dates.textContent = templeClosures[j];
+                ul.appendChild(dates);
+            }
+
+            if (templeData.name == "Tucson") {
+                tucson.appendChild(ul);
+            } else if (templeData.name == "Phoenix") {
+                phoenix.appendChild(ul);
+            } else if (templeData.name == "Gilbert") {
+                gilbert.appendChild(ul);
+            } else {
+                gila.appendChild(ul);
             }
         }
     }

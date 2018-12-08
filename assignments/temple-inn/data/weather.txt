@@ -1,0 +1,36 @@
+{
+    "id": 5771312,
+    "name": "Benjamin", Gilbert
+    "country": "US",
+    "coord": {
+      "lon": -111.731323,
+      "lat": 40.098289
+    }
+  },
+  {
+    "id": 5318313,
+    "name": "Tucson",
+    "country": "US",
+    "coord": {
+      "lon": -110.926483,
+      "lat": 32.221741
+    }
+  },
+  {
+    "id": 5296409,
+    "name": "Grand Canyon Village", phoenix
+    "country": "US",
+    "coord": {
+      "lon": -112.15406,
+      "lat": 36.046371
+    }
+  },
+  {
+    "id": 5317170,
+    "name": "Thatcher", gila valley
+    "country": "US",
+    "coord": {
+      "lon": -109.759247,
+      "lat": 32.849232
+    }
+  }

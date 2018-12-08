@@ -1,7 +1,7 @@
 {
     "temples" : [
     {
-        "name": "Tucson Arizona Temple",
+        "name": "Tucson",
         "closures": [
             "Tuesday, January 1, 2019",
             "Monday, February 11, 2019 - Monday, February 25, 2019",
@@ -15,7 +15,7 @@
         ]
     },
     {
-        "name": "Pheonix Arizona Temple",
+        "name": "Pheonix",
         "closures": [
             "Tuesday, January 1, 2019",
             "Saturday, April 6, 2019", 
@@ -30,7 +30,7 @@
 
     },
     {
-        "name": "Gilbert Arizona Temple",
+        "name": "Gilbert",
         "closures": [
             "Tuesday, January 1, 2019",
             "Monday, March 11, 2019 - Monday, March 25, 2019",
@@ -43,7 +43,7 @@
         ]
     },
     {
-        "name": "The Gila Valley Arizona Temple",
+        "name": "Gila Valley",
         "closures": [
             "Tuesday, January 1, 2019",
             "Monday, March 11, 2019 - Monday, March 25, 2019",
