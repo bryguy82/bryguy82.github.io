@@ -5,6 +5,14 @@
 *, h1, h2, h3 {
     margin: 0;
 }
+html {
+    height: 100%;
+}
+body {
+    display: grid;
+    height: 100%;
+}
+
 a:link,
 a:visited,
 a:focus,
@@ -83,6 +91,7 @@ nav#menu ul li a:active {
     color: #000000;
 }
 /*home article*/
+main h2,
 div#mesa h2,
 div#mesa h3,
 article.activities h2 {
@@ -110,16 +119,17 @@ div#reserve-button {
 ol {
     padding: 0 1em 1em 2em;
 }
+
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s; 
-}
-  
+}  
 @keyframes fade {
     from {opacity: .3} 
     to {opacity: 1}
 }
+
 /*temple page*/
 .hide-tucson {
     display: none;
@@ -140,14 +150,131 @@ div.temple-image {
 div.temple-image picture {
     grid-area: 1 / 1 / 3 / 3;
 }
+div.temple-text button,
 div.click-right button,
 div.click-left button {
     border: none;
     width: 100%;
     background-color: #8492AC;
     padding: .5em;
-    margin: -3px 0 0 0;
+    margin: -4px 0 0 0;
 }
+div.temple-text button {
+    box-shadow: 5px 5px 5px #6D5B2D;
+}
+div.temple-text,
+div.services {
+    padding: 1em;
+}
+div.temple-text h2 {
+    text-align: center;
+}
+div.temple-text h2,
+div.temple-text h3,
+div.temple-text h4,
+div.services h2,
+div.services h3 {
+    padding: 1em 0;
+    color: #6D5B2D;
+}
+div.services ul li {
+    list-style-type: square;
+}
+div.address {
+    display: grid;
+    padding: 1em;
+    grid-gap: 1em;
+    border: 4px solid #6D5B2D;
+    background-color: #E1B88B;
+    margin: 1em;
+}
+div.map-left button,
+div.map-right button {
+    border: none;
+    width: 100%;
+    background-color: #8492AC;
+    padding: .5em;
+}
+div.contact form,
+div.contact iframe,
+div.address {
+    grid-area: 1 / 1 / 3 / 3;
+}
+div.contact div.book {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+/*reservation form*/
+main form fieldset {
+    display: grid;
+}
+main h2 {
+    text-align: center;
+    padding: 1em 0 0 0;
+}
+form fieldset {
+    background-color: #E1B88B;
+    border: 10px solid #6D5B2D;
+    margin: 1em 0;
+}
+fieldset legend {
+    background-color: #FFFFFF;
+    border:5px solid #8492AC;
+    color: #6D5B2D;
+    text-align: center;
+    padding: 1em;
+}
+fieldset > div,
+fieldset > label {
+    padding: .5em;
+}
+label span {
+    color: #8492AC;
+}
+
+div.contact form input,
+fieldset.box input {
+    height: 2em;
+    font-size: 1.2em;
+    width: 100%;
+}
+div.contact form input:required:valid,
+fieldset.box input:required:valid {
+    color: #8492AC;
+}
+fieldset.bullet input {
+    height: unset;
+    width: unset;
+}
+fieldset.textbox label {
+    display: grid;
+}
+div.contact label textarea,
+fieldset.textbox textarea {
+    height: 5em;
+}
+div.contact div.book,
+form div.book {
+    padding: 1em 10%;
+}
+div.contact div.book input,
+form div.book input{
+    border: none;
+    width: 100%;
+    background-color: #8492AC;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 5px 5px 5px #6D5B2D;
+}
+div.contact iframe {
+    padding: 1em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+div.contact div#comments label {
+    display: grid;
+}
+
 
 /*carousel box*/
 div.carousel-text {
@@ -186,6 +313,12 @@ div.left {
 }
 div.right {
     grid-area: 2 / 3 / 3 / 4;
+}
+
+div.thanks {
+    display: grid;
+    padding: 1em;
+    grid-gap: 1em;
 }
 
 footer {

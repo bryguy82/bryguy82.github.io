@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Temple Inn & Suites, use this form to reserve for your room to come and
+        work at the temple.">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet">
+    <title>Reserve your room - Temple Inn & Suites - schedules, services, contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="temple-icon">
+            <img src="images/salt-lake-temple-silhouette.svg">
+        </div>
+        <div class="site-title">
+            <h1>Temple Inn & Suites</h1>
+        </div>
+        <div class="navbutton">
+            <button class="drop-down" onclick="openMenu()" type="button">&#9776;</button>
+        </div>
+        <div class="temple-icon2">
+            <img src="images/salt-lake-temple-silhouette.svg">
+        </div>
+    </header>
+    <nav id="menu" class="hide">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="temple.html">Temples</a>
+            </li>
+            <li>
+                <a class="selected" href="#">Reservation</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Room Reservation</h2>
+        <form action="thanks.html">
+            <fieldset class="box">
+                <legend><h3>Location</h3></legend>
+                <div>
+                    <label>Temple Location <span class="star">*</span> </label>
+                    <input list="location" name="location" required>
+                    <datalist id="location">
+                        <option value="Tucson"></option>
+                        <option value="Phoenix"></option>
+                        <option value="Gilbert"></option>
+                        <option value="Gila Valley"></option>
+                    </datalist>
+                </div>
+                <label>From <span class="star">*</span> <input type="date" name="completeDate" required></label>
+                <label>To <span class="star">*</span> <input type="date" name="completeDate" required></label>
+                <label>Number of Rooms <span class="star">*</span> <input type="number" name="amountRooms" required></label>
+                <label>Number of Adults <span class="star">*</span> <input type="number" name="adultsNumber" required></label>
+                <label>Number of Youth <span class="star">*</span> <input type="number" name="youthNumber" required></label>
+                <fieldset class="bullet">
+                    <legend><h4>Type of Room</h4></legend>
+                    <label><input type="radio" name="roomType" value="family"><span class="dot"></span> Family</label>
+                    <label><input type="radio" name="roomType" value="youngWomen"> Young Women</label>
+                    <label><input type="radio" name="roomType" value="youngMen"> Young Men</label>
+                </fieldset>
+            </fieldset>
+            <fieldset class="box">
+                <legend><h3>Name and Contact Information</h3></legend>
+                <label>First Name <span class="star">*</span> <input type="text" name="fname" pattern="[A-z]{3,}" title="Only letters please" required></label>
+                <label>Last Name <span class="star">*</span> <input type="text" name="lname" pattern="[A-z]{5,}" required></label>
+                <label>Email <span class="star">*</span> <input type="email" name="email" placeholder="example@email.com" required></label>
+                <label>Phone Number <span class="star">*</span> <input type="tel" name="tel" placeholder="1234567890" pattern="[0-9]{7,}" required></label>
+
+                <div> <label>State</label>
+                    <input list="state" name="state">
+                    <datalist id="state">
+                        <option value="Alabama"></option>
+                        <option value="Alaska"></option>
+                        <option value="Arizona"></option>
+                        <option value="Arkansas"></option>
+                        <option value="California"></option>
+                        <option value="Colorado"></option>
+                        <option value="Connecticut"></option>
+                        <option value="Delaware"></option>
+                        <option value="Florida"></option>
+                        <option value="Georgia"></option>
+                        <option value="Hawaii"></option>
+                        <option value="Idaho"></option>
+                        <option value="Illinois"></option>
+                        <option value="Indiana"></option>
+                        <option value="Iowa"></option>
+                        <option value="Kansas"></option>
+                        <option value="Kentucky"></option>
+                        <option value="Louisiana"></option>
+                        <option value="Maine"></option>
+                        <option value="Maryland"></option>
+                        <option value="Massachusetts"></option>
+                        <option value="Michigan"></option>
+                        <option value="Minnesoda"></option>
+                        <option value="Mississippi"></option>
+                        <option value="Missouri"></option>
+                        <option value="Montana"></option>
+                        <option value="Nebraska"></option>
+                        <option value="Nevada"></option>
+                        <option value="New Hampshire"></option>
+                        <option value="New Jersey"></option>
+                        <option value="New Mexico"></option>
+                        <option value="New York"></option>
+                        <option value="North Carolina"></option>
+                        <option value="North Dakota"></option>
+                        <option value="Ohio"></option>
+                        <option value="Oklahoma"></option>
+                        <option value="Oregon"></option>
+                        <option value="Pennsylvania"></option>
+                        <option value="Rhode Island"></option>
+                        <option value="South Carolina"></option>
+                        <option value="South Dakota"></option>
+                        <option value="Tennessee"></option>
+                        <option value="Texas"></option>
+                        <option value="Utah"></option>
+                        <option value="Vermont"></option>
+                        <option value="Virginia"></option>
+                        <option value="Washington"></option>
+                        <option value="West Vriginia"></option>
+                        <option value="Wisconsin"></option>
+                        <option value="Wyoming"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+            <fieldset class="textbox">
+                <legend><h3>Additional Comments / Accomodations</h3></legend>
+                <label>Comments: <textarea name="comments"></textarea></label>
+            </fieldset>
+            <div class="book">
+                <input type="submit" value="Make my Reservation!">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+        </div>
+        <div class="footer">
+            <p>&copy; Bethesda Headquarters</p>
+            <p>4800 Montgomery Ln #300,</p>
+            <p>Bethesda, MD 20814</p>
+            <p>301-518-4318</p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

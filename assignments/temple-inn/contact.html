@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Temple Inn & Suites is where you reserve your room, see temple 
+        information including schedules, services, and amenities for your stay.">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet">
+    <title>Temple Inn & Suites - reservations, schedules, services, contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="temple-icon">
+            <img src="images/salt-lake-temple-silhouette.svg">
+        </div>
+        <div class="site-title">
+            <h1>Temple Inn & Suites</h1>
+        </div>
+        <div class="navbutton">
+            <button class="drop-down" onclick="openMenu()" type="button">&#9776;</button>
+        </div>
+        <div class="temple-icon2">
+            <img src="images/salt-lake-temple-silhouette.svg">
+        </div>
+    </header>
+    <nav id="menu" class="hide">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="temple.html">Temples</a>
+            </li>
+            <li>
+                <a href="reservation.html">Reservation</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a class="selected" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="space">
+            <h2>Map and Contact Form</h2>
+            <div class="contact">
+                <div class="address">
+                    <h3>Our Corporate Address</h3>
+                    <p>Bethesda Headquarters</p>
+                    <p>4800 Montgomery Ln #300,</p>
+                    <p>Bethesda, MD 20814</p>
+                    <h3>Our Phone Number</h3>
+                    <p>301-518-4318</p>
+                </div>
+                <div class="map-left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="map-right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701326!2d-77.09772048515377!3d38.98325177955747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800+Montgomery+Ln%2C+Bethesda%2C+MD+20814%2C+USA!5e0!3m2!1sen!2sbr!4v1544309128921"
+                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="map-left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="map-right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="contact">
+                <form action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label>First Name <span class="star">*</span> <input type="text" name="fname" pattern="[A-z]{3,}"
+                                title="Only letters please" required></label>
+                        <label>Last Name <span class="star">*</span> <input type="text" name="lname" pattern="[A-z]{5,}"
+                                required></label>
+                        <label>Email <span class="star">*</span> <input type="email" name="email" placeholder="example@email.com"
+                                required></label>
+                        <div id="comments">
+                            <label>Comments: <textarea name="comments"></textarea></label>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="book">
+                    <input type="submit" value="Contact Me!">
+                </div>
+                <div class="map-left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="map-right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+        </div>
+        <div class="footer">
+            <p>&copy; Bethesda Headquarters</p>
+            <p>4800 Montgomery Ln #300,</p>
+            <p>Bethesda, MD 20814</p>
+            <p>301-518-4318</p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/carouselmap.js"></script>
+</body>
+
+</html>

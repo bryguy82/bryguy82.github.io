@@ -7,7 +7,7 @@ function moveSlides(n) {
 }
 
 function changeSlides(n){
-    var images = document.getElementsByClassName("temple-info");
+    var images = document.getElementsByClassName("contact");
 
     if (n > images.length) {
         index = 1;
@@ -17,7 +17,7 @@ function changeSlides(n){
     }
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "none";
+    }
 
-
-    images[index - 1].style.display = "grid";}
+    images[index - 1].style.display = "grid";
 }

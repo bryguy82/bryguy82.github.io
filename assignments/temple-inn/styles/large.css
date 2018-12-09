@@ -33,6 +33,7 @@
             'nav main main main'
             'nav main main main'
             'foot foot foot foot';
+        grid-template-columns: 186px 1fr 1fr 1fr;
     }
 
     nav#menu.hide ul {
@@ -58,8 +59,17 @@
         height: 40px;
     }
 
-    main {
+    main article,
+    main div#reservation,
+    main div.carousel,
+    main div.services-hero {
         max-width: 900px;
         margin: 0 auto;
     }
+
+    div.contact form input,
+    fieldset.box input {
+        height: 1.2em;
+    }
+
 }

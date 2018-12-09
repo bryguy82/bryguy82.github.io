@@ -1,8 +1,8 @@
 
-var tucson = document.querySelector(".weather-tucson");
-var phoenix = document.querySelector(".weather-phoenix");
-var gilbert = document.querySelector(".weather-gilbert");
-var gila = document.querySelector(".weather-gila");
+var Wtucson = document.querySelector(".weather-tucson");
+var Wphoenix = document.querySelector(".weather-phoenix");
+var Wgilbert = document.querySelector(".weather-gilbert");
+var Wgila = document.querySelector(".weather-gila");
 
 var weatherTuc = new XMLHttpRequest();
 var weatherPho = new XMLHttpRequest();
@@ -38,8 +38,8 @@ weatherTuc.onload = function () {
     ul.appendChild(li1);
     ul.appendChild(li2);
 
-    tucson.appendChild(h4);
-    tucson.appendChild(ul);
+    Wtucson.appendChild(h4);
+    Wtucson.appendChild(ul);
 }
 weatherPho.onload = function () {
     var weatherInfo = JSON.parse(weatherTuc.responseText);
@@ -55,8 +55,8 @@ weatherPho.onload = function () {
     ul.appendChild(li1);
     ul.appendChild(li2);
 
-    phoenix.appendChild(h4);
-    phoenix.appendChild(ul);
+    Wphoenix.appendChild(h4);
+    Wphoenix.appendChild(ul);
 }
 weatherGil.onload = function () {
     var weatherInfo = JSON.parse(weatherTuc.responseText);
@@ -72,8 +72,8 @@ weatherGil.onload = function () {
     ul.appendChild(li1);
     ul.appendChild(li2);
 
-    gilbert.appendChild(h4);
-    gilbert.appendChild(ul);
+    Wgilbert.appendChild(h4);
+    Wgilbert.appendChild(ul);
 }
 weatherGila.onload = function () {
     var weatherInfo = JSON.parse(weatherTuc.responseText);
@@ -89,6 +89,6 @@ weatherGila.onload = function () {
     ul.appendChild(li1);
     ul.appendChild(li2);
 
-    gila.appendChild(h4);
-    gila.appendChild(ul);
+    Wgila.appendChild(h4);
+    Wgila.appendChild(ul);
 }
