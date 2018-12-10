@@ -206,7 +206,7 @@ div.contact div.book {
 
 /*reservation form*/
 main form fieldset {
-    display: grid;
+    display: flex;
 }
 main h2 {
     text-align: center;
@@ -247,7 +247,8 @@ fieldset.bullet input {
     width: unset;
 }
 fieldset.textbox label {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 div.contact label textarea,
 fieldset.textbox textarea {
