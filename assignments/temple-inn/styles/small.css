@@ -131,6 +131,14 @@ ol {
 }
 
 /*temple page*/
+/*.temple-info1 {
+    display: grid;
+}*/
+.temple-info2,
+.temple-info3,
+.temple-info4 {
+    display: none;
+}
 .hide-tucson {
     display: none;
 }
@@ -143,6 +151,9 @@ ol {
 .hide-gila {
     display: none;
 }
+.show-temple {
+    display: grid;
+}
 div.temple-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,8 +162,14 @@ div.temple-image picture {
     grid-area: 1 / 1 / 3 / 3;
 }
 div.temple-text button,
-div.click-right button,
-div.click-left button {
+div.click-right1 button,
+div.click-right2 button,
+div.click-right3 button,
+div.click-right4 button,
+div.click-left1 button,
+div.click-left2 button,
+div.click-left3 button,
+div.click-left4 button {
     border: none;
     width: 100%;
     background-color: #8492AC;
