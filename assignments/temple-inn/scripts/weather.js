@@ -42,7 +42,7 @@ weatherTuc.onload = function () {
     Wtucson.appendChild(ul);
 }
 weatherPho.onload = function () {
-    var weatherInfo = JSON.parse(weatherTuc.responseText);
+    var weatherInfo = JSON.parse(weatherPho.responseText);
 
     var h4 = document.createElement("h4");
     var ul = document.createElement("ul");
@@ -59,7 +59,7 @@ weatherPho.onload = function () {
     Wphoenix.appendChild(ul);
 }
 weatherGil.onload = function () {
-    var weatherInfo = JSON.parse(weatherTuc.responseText);
+    var weatherInfo = JSON.parse(weatherGil.responseText);
 
     var h4 = document.createElement("h4");
     var ul = document.createElement("ul");
@@ -76,7 +76,7 @@ weatherGil.onload = function () {
     Wgilbert.appendChild(ul);
 }
 weatherGila.onload = function () {
-    var weatherInfo = JSON.parse(weatherTuc.responseText);
+    var weatherInfo = JSON.parse(weatherGila.responseText);
 
     var h4 = document.createElement("h4");
     var ul = document.createElement("ul");
