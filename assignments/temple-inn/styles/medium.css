@@ -25,6 +25,10 @@
         margin: 0 auto;
     }
 
+    div.services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     div.thanks,
     main form {
         max-width: 650px;

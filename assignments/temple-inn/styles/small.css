@@ -179,6 +179,12 @@ div.click-left4 button {
 div.temple-text button {
     box-shadow: 5px 5px 5px #6D5B2D;
 }
+div.services-grid {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;        
+}
 div.temple-text,
 div.services {
     padding: 1em;
@@ -196,6 +202,9 @@ div.services h3 {
 }
 div.services ul li {
     list-style-type: square;
+}
+div.service-pictures img {
+    max-width: 100%;
 }
 div.address {
     display: grid;
