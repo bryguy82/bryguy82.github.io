@@ -183,7 +183,8 @@ div.services-grid {
     padding: 1em 0;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;        
+    align-items: center;  
+    justify-items: center;      
 }
 div.temple-text,
 div.services {
