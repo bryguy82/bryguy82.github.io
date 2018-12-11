@@ -9,10 +9,10 @@ var weatherPho = new XMLHttpRequest();
 var weatherGil = new XMLHttpRequest();
 var weatherGila = new XMLHttpRequest();
 
-var urlTucson = "//api.openweathermap.org/data/2.5/weather?id=5318313&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
-var urlPhoenix = "//api.openweathermap.org/data/2.5/weather?id=5296409&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
-var urlGilbert = "//api.openweathermap.org/data/2.5/weather?id=5771312&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
-var urlGila = "//api.openweathermap.org/data/2.5/weather?id=5317170&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
+var urlTucson = "https://api.openweathermap.org/data/2.5/weather?id=5318313&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
+var urlPhoenix = "https://api.openweathermap.org/data/2.5/weather?id=5296409&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
+var urlGilbert = "https://api.openweathermap.org/data/2.5/weather?id=5771312&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
+var urlGila = "https://api.openweathermap.org/data/2.5/weather?id=5317170&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
 
 weatherTuc.open("GET", urlTucson, true);
 weatherPho.open("GET", urlPhoenix, true);
