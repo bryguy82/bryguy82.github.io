@@ -6,7 +6,7 @@ var gila = document.querySelector(".temple-gila");
 
 
 var temples = new XMLHttpRequest();
-var url = "https://bryguy82.github.io/assignments/temple-inn/data/templedata.json";
+var url = "https://bryguy82.github.io/data/templedata.json";
 
 temples.open("GET", url);
 
