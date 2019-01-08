@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Southern Skies - gallery with user pictures of regional weather images.">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <title>Southern Skies - Regional Weather Gallery - pictures - image submissions</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+            <div class="logo-box">
+                <img src="images/bolt-one-100.png" alt="bolt logo">
+            </div>
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands</h2>
+            </div>
+            <div class="conditions">
+                <img id="current-conditions" src="images/current-weather.png" alt="current conditions">
+                <h2>Sunny</h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a href="preston.html">Preston</a>
+            </li>
+            <li>
+                <a href="sodasprings.html">Soda Springs</a>
+            </li>
+            <li>
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a class="selected" href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="body-title">
+            <h1>Regional Weather Gallery</h1>
+        </div>
+        <div class="gallery-grid">
+            <figure class="gallery">
+                <img src="images/jorg-714600-unsplash-300.jpg" alt="Field of flowers">
+                <figcaption>Summer day in a field of flowers.</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/kym-679432-unsplash-300.jpg" alt="Forest sunset">
+                <figcaption>Cloudy sunset in the mountains.</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/lucien-kolly-1069829-unsplash-300.jpg" alt="Lightning storm">
+                <figcaption>Purple thunderstorm above rolling hills.</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/nikolas-noonan-682178-unsplash-300.jpg" alt="Tornado in field">
+                <figcaption>Thin grey tornado in a field.</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/teddy-kelley-188522-unsplash-300.jpg" alt="Snow covered village">
+                <figcaption>Snow covered cabin and village with mountains.</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/paul-gilmore-258257-unsplash-300.jpg" alt="Wet forest street">
+                <figcaption>Wet road, trees, and snow capped mountains.</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div id="about">
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+            </div>
+            <p>&copy; Bryan Anderson | <a href="#">Terms of Use</a></p>
+            <p><span id="currentDate"></span></p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

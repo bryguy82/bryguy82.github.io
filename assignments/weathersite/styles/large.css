@@ -1,0 +1,106 @@
+@media screen and (min-width: 900px) {
+
+    #header-box,
+    nav ul,
+    main div.weather-box,
+    main article.text,
+    main section,
+    main div.map,
+    main div.gallery-grid,
+    main form {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    nav ul{
+        position: initial;
+    }
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav button {
+        display: none;
+    }
+
+    .body-title,
+    .forecast {
+        margin: auto;
+    }
+    .weather-box,
+    article,
+    .map {
+        margin: 0;
+    }
+    .article-box {
+        flex-direction: row;
+    }
+
+    /*GALLERY ONLY*/
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 1em 0;
+    }
+    .gallery-grid figure {
+        margin: 0;
+        padding: 0;
+    }
+    .gallery-grid figure img {
+        width: 285px;
+    }
+    .gallery-grid figure img:hover {
+        box-shadow: 5px 5px 10px #004D9D;
+    }
+    div.gallery-grid div#fish-haven {
+        grid-area: 2 / 1 ;
+    }
+    div.gallery-grid div#preston {
+        grid-area: 2 / 2;
+    }
+    div.gallery-grid div#soda-springs {
+        grid-area: 2 / 3;
+    }
+
+    /*FORM ONLY*/
+    form fieldset.name,
+    form fieldset.storm-form {
+        border: none;
+        width: 60%;
+    }
+    fieldset legend {
+        font-size: 2em;
+        text-align: left;
+    }
+    form label.above input,
+    form label.above select,
+    form label.above textarea {
+        padding: 0 0 0 .5em;
+        margin: 0;
+    }
+    form label.above input,
+    form label.above select {
+        height: 36px;
+    }
+    form input.submitButton {
+        width: 300px;
+    }
+    form fieldset.storm-form label.side {
+        padding: 0;
+    }
+    form fieldset.storm-form div {
+        font-size: 1.7em;
+    }
+    form label.above input:hover,
+    form label.above select:hover,
+    form label.above textarea:hover {
+        box-shadow: 5px 5px 10px #004D9D;
+    }
+    form label.side:hover {
+        color: black;
+    } 
+    form input.submitButton:hover {
+        background-color: #63A4D7;
+    }
+}

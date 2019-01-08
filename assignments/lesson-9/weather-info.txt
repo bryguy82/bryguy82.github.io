@@ -1,0 +1,37 @@
+https://wireframe.cc/EsfNjC //phone screen
+https://wireframe.cc/wheyAS //large screen
+
+
+Weather key
+928cdffb6f7b8cf5714b4c2f8047e814
+
+API call example CIDY ID
+api.openweathermap.org/data/2.5/weather?id=2172797
+
+API call example ZIP code
+api.openweathermap.org/data/2.5/weather?zip=94040,us
+
+INCLUDE: motto, year founded, population, and annual rainfall
+
+https://byui-cit230.github.io/weather/data/towndata.json
+
+"id": 5604473,
+"name": "Preston",
+"country": "US",
+"coord": {
+"lon": -111.876617,
+"lat": 42.09631
+
+"id": 5607916,
+"name": "Soda Springs",
+"country": "US",
+"coord": {
+"lon": -111.604668,
+"lat": 42.654369
+
+"id": 5603240,
+"name": "Paris",
+"country": "US",
+"coord": {
+"lon": -111.401039,
+"lat": 42.22715

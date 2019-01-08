@@ -1,0 +1,58 @@
+@media screen and (min-width: 650px) {
+    header .title h1 {
+        font-size: 2.5em;
+    }
+    header .title h2 {
+        font-size: 1.7em;
+    }
+    main .body-title h3,
+    main .forecast h3,
+    main .text h3,
+    main .map h3 {
+        font-size: 2em;
+        padding: 1em 0 0;
+    }
+    header div.conditions img#current-conditions {
+        width: 115px;
+    }
+    /*Unhiding objects*/
+    .conditions {
+        display: flow-root;
+    }
+    .conditions, .logo-box {
+        width: 115px;
+    }
+    .forecast {
+        display: inherit;
+        color: #004D9D;
+        text-align: center;
+    }
+    .forecast table {
+        display: inline-table;
+        font-size: 1.3em;
+        width: 100%;
+        padding: 1em;
+    }
+    .label-box {
+        font-size: 1.1em;
+    }
+    .weather-details, .contact-box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    div.weather-details {
+        font-size: 1em;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery-grid figure img:hover {
+        box-shadow: none;
+    }
+    fieldset legend {
+        font-size: 1.7em;
+    }
+    form fieldset.alerts label {
+        display: inline-block;
+    }
+}

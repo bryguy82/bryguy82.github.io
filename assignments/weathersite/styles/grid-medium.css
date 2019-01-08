@@ -1,0 +1,95 @@
+@media screen and (min-width: 650px) {
+    /*--------Page layout--------*/
+    body {
+        grid-template-areas: 
+            'header header header header'
+            'nav main main main'
+            'nav main main main'
+            'footer footer footer footer';
+    }
+    /*--------Header--------*/
+    div#header-box {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    header .title h1 {
+        font-size: 2.5em;
+    }
+    header .title h2 {
+        font-size: 1.7em;
+    }
+    div.conditions {
+        display: inline-grid;
+    }
+    header div.conditions img#current-conditions {
+        width: 115px;
+    }
+    /*--------Nav--------*/
+    nav button.menuButton {
+        display: none;
+    }
+    nav ul.hide {
+        display: contents;
+    }
+    nav ul li a {
+        width: 5em;
+        padding: .5em;
+    }
+    nav ul#clickMenu.hide {
+        display: grid;
+        width: 123px;
+    }
+    /*--------Main--------*/
+    main {
+        padding: 0 1em;
+    }
+    main h3 {
+        font-size: 2em;
+        padding: 1em 0;
+    }
+    /*--------Hero--------*/
+    div.weather-box {
+        grid-template-columns: .4fr 2.5fr 4fr;
+        grid-template-rows: .4fr 5fr 1fr;
+    }
+    div.weather-box div.weather-details {
+        font-size: 1em;
+    }
+    /*--------Forecast--------*/
+    .forecast {
+        padding: 0 0 1em;
+        display: grid;
+        text-align: center;
+    }
+    main section table {
+        font-size: 1.3em;
+    }
+    /*--------Article--------*/
+    article#grid.text {
+        grid-template-columns: 1fr 1fr;
+    }
+    div.article-box {
+        display: contents;
+    }
+    article#grid.text h3 {
+        grid-area: 1 / 1;
+    }
+    article#grid.text h4 {
+        grid-area: 2 / 1;
+    }
+    article#grid.text div div.story {
+        grid-area: 3 / 1;
+        padding: 1em;
+    }
+    article#grid.text div div.article-image-box {
+        grid-area: 1 / 2 / 4 / 3;
+        align-self: center;
+    }
+    /*--------Contact--------*/
+    div.map div.contact-box {
+        grid-template-columns: 1fr 1fr;
+    }
+    div.map div div.contact {
+        align-self: center;
+    }
+}

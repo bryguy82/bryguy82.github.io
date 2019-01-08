@@ -1,0 +1,232 @@
+/*flex for header and nav*/
+
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Dekko', cursive;
+}
+/*Header start*/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 1em 0;
+    background-color: #004D9D;
+    color: #EDF2F6;
+    text-align: center;
+}
+header h1 {
+    font-size: 1.8em;
+    margin: 0 -8em;
+}
+#header-box {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title h2 {
+    display: inline-block;
+    font-size: 1em;
+}
+.conditions {
+    display: none;
+    max-width: 115px;
+}
+#current-conditions {
+    max-width: 100%;
+}
+.logo-box {
+    padding: 0;
+}
+.logo-box figure {
+    margin: 0;
+}
+.logo-box figure img {
+    width: 75px;
+}
+.adjust {
+    font-size: .8em;
+}
+#logo {
+    margin: 1em;
+    width: 3em;
+}
+/*Header end*/
+/*Nav start*/
+nav {
+    background-color: #63A4D7;
+    color: #004D9D;
+    text-align: center;
+}
+nav button {
+    padding: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    font-size: larger;
+}
+nav ul.hide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+}
+li a:hover {
+    background-color: #004D9D;
+    color: #EDF2F6;
+}
+li a:visited {
+    color: #172703;
+}
+li .selected {
+    background-color: #A2CEF2;
+}
+
+main,
+.forecast,
+article,
+.text,
+.body-title {
+    margin: 0;
+}
+.body-title {
+    color: #004d9d;
+    padding: 1em 0;
+    border: 5px solid #BBC0B5;
+    text-align: center;
+}
+/*Gallery only*/
+.gallery-grid {
+    display: grid;
+    justify-content: center;
+}
+.gallery-grid figure {
+    margin: 0;
+    padding: 1em;
+}
+.gallery-grid figure img {
+    width: auto;
+}
+
+.gallery1 { grid-area: num1;}
+.gallery2 { grid-area: num2;}
+.gallery3 { grid-area: num3;}
+.gallery4 { grid-area: num4;}
+.gallery5 { grid-area: num5;}
+.gallery6 { grid-area: num6;}
+/*HERO BOX*/
+#weather-summary {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    color: #EDF2F6;
+    width: 40%;
+    font-size: 1.1em;
+    background-color: #3a84dfc4;
+}
+#sunny {
+    display: block;
+    width: 100%;
+}
+.weather-box {
+    position: relative;
+    color: #004D9D;
+    padding: 1em .2em;
+    border: 5px solid #BBC0B5;
+}
+/*weekly temp start*/
+.forecast {
+    display: none;
+}
+/*weekly temp end*/
+/*Weather summary start*/
+article h3 {
+    text-align: center;
+    padding: 1em;
+}
+article.text {
+    margin: 0;
+    flex-direction: column-reverse;
+    color: #004D9D;
+    font-size: 18px;
+    border: 5px solid #BBC0B5;
+}
+.weather-details {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 0 1em;
+}
+.label-box {
+    display: grid;
+    grid-template-areas:
+        'label-1 label-2'
+        'label-3 label-4'
+        'label-5 label-6';
+    grid-gap: .5em 2em;    
+}
+#label-1 {grid-area: label-1;}
+#label-2 {grid-area: label-2;}
+#label-3 {grid-area: label-3;}
+#label-4 {grid-area: label-4;}
+#label-5 {grid-area: label-5;}
+#label-6 {grid-area: label-6;}
+.beach-box picture img{
+    width: 100%;
+}
+
+/*Weather summary end*/
+/*Map start*/
+.map {
+    font-size: 18px;
+    color: #004D9D;
+    padding: 0 0 1em;
+    text-align: center;
+    border: 5px solid #BBC0B5;
+}
+.contact-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center; 
+}
+.contact {
+    padding: 0 1em 1em 1em
+}
+.map h3 {
+    padding: 1em;
+    order: 1;
+}
+.gmap-canvas iframe {
+    width: 100%;
+}
+/*Map end*/
+/*Footer start*/
+footer {
+    background-color: #004D9D;
+    color: #EDF2F6;
+    display: block;
+    text-align: center;
+}
+#about {
+    display: inline-block;
+    margin: 1em;
+}
+#about a:visited {
+    color: #172703;
+}
+span#currentdate {
+    display: block;
+}
+/*Footer end*/

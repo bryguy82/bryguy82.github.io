@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Storm Center for Southern Skies, submit form, forecast, conditions">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <title>Southern Skies - Storm Center - weather report - submit form - current conditions - forecast</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+            <div class="logo-box">
+                <img src="images/bolt-one-100.png" alt="bolt logo">
+            </div>
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands</h2>
+            </div>
+            <div class="conditions">
+                <img id="current-conditions" src="images/current-weather.png" alt="current conditions">
+                <h2>Sunny</h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a href="preston.html">Preston</a>
+            </li>
+            <li>
+                <a href="sodasprings.html">Soda Springs</a>
+            </li>
+            <li>
+                <a class="selected" href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="body-title">
+            <h1>Storm Submittal Form</h1>
+        </div>
+        <form action="thanks.html">
+            <fieldset class="name">
+                <legend>Name and Contact Information</legend>
+                <label class="above">First Name * <input type="text" name="fname" pattern="[A-z]{5,}" title="Only letters please" autofocus required></label>
+                <label class="above">Last Name * <input type="text" name="lname" pattern="[A-z]{5,}" required></label>
+                <label class="above">Email * <input type="email" name="email" placeholder="example@email.com" required></label>
+                <label class="above">Phone Number * <input type="tel" name="tel" placeholder="1234567890" pattern="[0-9]{7,}" required></label>
+                <label class="above">Zip Code * <input type="postal-code" name="zip" required></label>
+            </fieldset>
+            <fieldset class="storm-form">
+                <legend>Storm Information</legend>
+                <label class="above">Storm Date<input type="date" name="completeDate"></label>
+                <label class="above">Storm Type
+                    <input list="storms" name="storms">
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label class="above">
+                    Storm Severity : <span id="rangeValue"></span>
+                    <input id="range" type="range" name="stormSeverity" 
+                    value="5" min="1" max="10" step="1" 
+                    oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                </label>
+                <label class="above">Storm Region
+                    <select id="region">
+                        <option value="" selected disabled>Select Region &#9662;</option>
+                        <option value="fishhaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                    </select>
+                </label>
+                <div>Are you in any danger?</div>
+                <label class="side"><input type="radio" name="in-danger" value="yes"> Yes</label>
+                <label class="side"><input type="radio" name="in-danger" value="maybe"> Maybe</label>
+                <label class="side"><input type="radio" name="in-danger" value="no"> No</label>
+                <label class="above">Additional Information<textarea></textarea></label>
+            </fieldset>
+            <input class="submitButton" type="submit" value="Report this Storm">
+        </form>
+    </main>
+    <footer>
+        <div id="about">
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+            </div>
+            <p>&copy; Bryan Anderson | <a href="#">Terms of Use</a></p>
+            <p><span id="currentDate"></span></p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/slider.js"></script>
+</body>
+
+</html>

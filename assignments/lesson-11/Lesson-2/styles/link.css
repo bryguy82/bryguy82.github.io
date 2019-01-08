@@ -1,0 +1,16 @@
+div.links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.links a:link {
+    color: #004D9D;
+}
+.links a.selected {
+    color: #004D9D;
+}
+.links a:visited {
+    color: #004D9D;
+}
+.links a:hover {
+    color: #004D9D;
+}

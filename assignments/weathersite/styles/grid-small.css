@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    font-family: 'Dekko', cursive;
+}
+/*--------Page grid and colors--------*/
+body {
+    display: grid;
+}
+header {
+    background-color: #004D9D;
+    color: #EDF2F6;
+    grid-area: header;
+}
+nav {
+    background-color: #63A4D7;
+    color: #004D9D;
+    grid-area: nav;
+}
+main {
+    background-color: #A2CEF2;
+    color: #004D9D;
+    grid-area: main;
+}
+footer {
+    background-color: #004D9D;
+    color: #EDF2F6;
+    grid-area: footer;
+}
+body {
+    grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'main'
+        'footer';
+}
+
+/*--------Header--------*/
+div#header-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+div.title {
+    padding: 1em 0;
+}
+header h1 {
+    font-size: 1.8em;
+}
+.title h2 {
+    font-size: 1em;
+}
+div.conditions {
+    display: none;
+}
+
+/*--------Navigation--------*/
+nav {
+    text-align: center;
+}
+nav ul {
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+    font-size: larger;
+    background-color: #63A4D7;
+}
+nav ul a {
+    text-decoration: none;
+}
+nav ul.hide {
+    display: none;
+}
+nav button.menuButton {
+    padding: .2em;
+    border: none;
+    font-size: xx-large;
+    background-color: transparent;
+}
+nav ul#clickMenu {
+    grid-auto-rows: 3em;
+    align-items: center;
+}
+li a.selected {
+    background-color: #A2CEF2;
+}
+li a:visited {
+    color: #172703;
+}
+li a:hover {
+    background-color: #004D9D;
+    color: #EDF2F6;
+}
+nav ul li a {
+    padding: .5em 35vw;
+}
+
+/*--------Hero--------*/
+main h3 {
+    font-size: 1.5em;
+}
+div.body-title {
+    display: grid;
+    text-align: center;
+}
+#hero {
+    width: 100%;
+}
+div.weather-box {
+    display: grid;
+    grid-template-columns: .4fr 3fr 4fr;
+    grid-template-rows: .4fr 5fr 1fr;
+}
+div.weather-box picture {
+    grid-area: 1 / 1 / 4 / 4;
+}
+div.weather-box div.weather-details {
+    z-index: 2;
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: .8em;
+}
+div#weather-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #EDF2F6;
+    border: 3px solid #004d9d;
+    border-radius: 1em;
+    grid-gap: .5em 1em;
+    padding: .5em;
+}
+
+/*--------Forecast--------*/
+.forecast {
+    display: none;
+}
+
+/*--------Article--------*/
+article.text {
+    display: grid;
+    font-size: 1.1em;
+}
+article.text h3 {
+    padding: 1em 0 0;
+    text-align: center;
+}
+article.text h4 {
+    text-align: center;
+}
+div.article-box {
+    display: grid;
+}
+div.article-box div.story {
+    padding: 0 .5em;
+    grid-row-start: 2;
+}
+div.article-image-box {
+    text-align: center;
+    padding: 1em 0;
+}
+div#town-events ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1em 0 1em;
+}
+main article.text {
+    border-radius: 1em;
+    color: #EDF2F6;
+    background: #004d9d;
+}
+main article#grid.text {
+    padding: 1em 0;
+    border: 3px solid #004d9d;
+    border-radius: 1em;
+    background-color: #EDF2F6;
+    color:#004D9D;
+}
+/*--------Contact --------*/
+div.map h3 {
+    padding: 1em 0 0;
+}
+div.map {
+    text-align: center;
+}
+div.map div.contact-box {
+    display: grid;
+}
+div.map div.contact,
+div.map div.mapouter {
+    padding: 1em 0;
+    font-size: 1.1em;
+}
+
+/*--------Footer--------*/
+footer {
+    text-align: center;
+}
+div.icons {
+    padding: 1em;
+}
+div.icons img {
+    width: 3em;
+}
+div#about {
+    padding: 0px 0 1em 0;
+}
+#about a {
+    text-decoration: none;
+}
+#about a:link {
+    color: #EDF2F6;
+}
+#about a:visited {
+    color: #EDF2F6;
+}

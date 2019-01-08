@@ -1,0 +1,33 @@
+@media screen and (min-width: 650px) {
+    /*Unhiding objects*/
+    .conditions {
+        display: flow-root;
+    }
+    .conditions, .logo-box {
+        width: 115px;
+    }
+    .forecast {
+        display: inherit;
+        color: #004D9D;
+        padding: 1em;
+        border: 5px solid #BBC0B5;
+        text-align: center;
+    }
+    .forecast table {
+        display: inline-table;
+        border-collapse: collapse;
+        border-block-start: inherit;
+        width: 100%;
+    }
+    .weather-details, .contact-box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .gallery-grid {
+        grid-template-areas: 'num1 num2' 'num4 num5' 'num3 num6';
+        justify-items: center;
+    }
+    .gallery-grid figure img:hover {
+        box-shadow: none;
+    }
+}

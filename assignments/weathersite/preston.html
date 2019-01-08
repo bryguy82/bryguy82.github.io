@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Southern Skies Preston weather conditions, 5-day forecast">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <title>Southern Skies - Preston - weather report - current conditions - 5-day forecast</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+            <div class="logo-box">
+                <img src="images/bolt-one-100.png" alt="bolt logo">
+            </div>
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands</h2>
+            </div>
+            <div class="conditions">
+                <img id="current-conditions" src="images/current-weather.png" alt="current conditions">
+                <h2><span id="cityMain"><!--JSON DATA HERE--></span></h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a class="selected" href="#">Preston</a>
+            </li>
+            <li>
+                <a href="sodasprings.html">Soda Springs</a>
+            </li>
+            <li>
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="body-title">
+            <h1>The Town of <span id="cityName"><!--JSON DATA HERE--></span></h1>
+        </div>
+        <div class="weather-box">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/franklin-small-pix97.jpg">
+                <source media="(max-width: 650px)" srcset="images/franklin-medium-pix90.jpg">
+                <img id="hero" title="Sunny Day" src="images/franklin-original-pix80.jpg" alt="Sunshine">
+            </picture>
+            <div class="weather-details">
+                <div id="weather-summary">
+                    <p class="label">Currently:</p>
+                    <p class="value"><span id="currently"><!--JSON DATA HERE--></span></p>
+                    <p class="label">Temperature:</p>
+                    <p class="value"><span id="temperature"><span id="cityTemp"><!--JSON DATA HERE--></span></span> &deg;F</p>
+                    <p class="label">Humidity:</p>
+                    <p class="value"><span id="cityHumid"><!--JSON DATA HERE--></span>%</p>
+                    <p class="label">Precipitation:</p>
+                    <p class="value">5 inches</p>
+                    <p class="label">Wind Speed:</p>
+                    <p class="value"><span id="windSpeed"><span id="cityWindChill"><!--JSON DATA HERE--></span></span> mph</p>
+                    <p class="label">Wind Chill:</p>
+                    <p class="value"><span id="windChill"></span> &deg;F</p>
+                </div>
+            </div>
+        </div>
+        <section class="forecast">
+            <h3>High Temperature Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td><span id="day1">87</span>&deg;F</td>
+                        <td><span id="day2">88</span>&deg;F</td>
+                        <td><span id="day3">89</span>&deg;F</td>
+                        <td><span id="day4">87</span>&deg;F</td>
+                        <td><span id="day5">85</span>&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article class="text" id="article">
+            <h3>Annual Preston Day</h3>
+            <h4>By Mary Poppins</h4>
+            <div class="article-box">
+                <div class="story">
+                    <p>
+                        This weekend will be a great time to get outdoors.  The temperatures will
+                        be in the high 70s over the weekend which means it's a great time to head
+                        to Preston's famous town center.  Not only that, it's our annual barbeque
+                        in rememberance of those who founded this town 120 years ago.
+                    </p>
+                    <p>
+                        A local family, the Nelsons, have generations that have been living here
+                        and they plan to continue the trend.  The oldest grandson of Jacob Nelson,
+                        Michael, will be in charge of this year's events. 
+                    </p>
+                    <p>
+                        Food and a good time will be had for all.  The food will be provided, but 
+                        it is requested that you donate non-perishible food for the event's food
+                        drive.
+                    </p>
+                </div>
+                <div class="article-image-box">
+                    <picture>
+                        <img title="Parkgoers" src="images/robert-bye-141864-unsplash-300.jpg" alt="Parkgoers">
+                    </picture>
+                </div>
+            </div>
+        </article>
+        <article class="text">
+            <h3>Upcoming Events in Preston</h3>
+            <div id="town-events">
+                <!--JSON DATA LIST HERE-->
+            </div>
+        </article>
+        <div class="map">
+            <h3>Contact Us</h3>
+            <div class="contact-box">
+                <div class="gmap-canvas">
+                    <iframe src="https://maps.google.com/maps?q=preston%2C%20idaho&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <br>
+                    <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                </div>
+                <div class="contact">
+                    <p>Contact Information</p>
+                    <p>Phone: 9843-2848</p>
+                    <p>Email: southernskies@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="about">
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+            </div>
+            <p>The weather data came from <a href="https://openweathermap.org/" target="_blank">here</a>.</p>
+            <p>&copy; Bryan Anderson | <a href="#">Terms of Use</a></p>
+            <p><span id="currentDate"></span></p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/preston-weather.js"></script><!--Inserts values from API-->
+    <script src="scripts/preston-forecast.js"></script><!--Inserts forecast values from API-->
+    <script src="scripts/preston-events.js"></script><!--Inserts events from API-->
+    <!--script src="scripts/windchill.js"></script>uses those values for the wind chill-->
+</body>
+
+</html>

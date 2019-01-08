@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Temple Inn & Suites is where you reserve your room, see temple 
+        information including schedules, services, and amenities for your stay.">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet">
+    <title>Temple Inn & Suites - reservations, schedules, services, contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="temple-icon">
+            <img src="images/salt-lake-temple-silhouette.svg" alt="temple image">
+        </div>
+        <div class="site-title">
+            <h1>Temple Inn & Suites</h1>
+        </div>
+        <div class="navbutton">
+            <button class="drop-down" onclick="openMenu()" type="button">&#9776;</button>
+        </div>
+        <div class="temple-icon2">
+            <img src="images/salt-lake-temple-silhouette.svg" alt="temple image">
+        </div>
+    </header>
+    <nav id="menu" class="hide">
+        <ul>
+            <li>
+                <a class="selected" href="#">Home</a>
+            </li>
+            <li>
+                <a href="temple.html">Temples</a>
+            </li>
+            <li>
+                <a href="reservation.html">Reservation</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <picture class="hero">
+                <source media="(max-width: 400px)" srcset="images/mesa-arizona-temple-400-90.jpg">
+                <source media="(max-width: 650px)" srcset="images/mesa-arizona-temple-650-80.jpg">
+                <img title="Mesa Arizona Temple" src="images/mesa-arizona-temple-900-50.jpg" alt="Mesa Arizona Temple">
+            </picture>
+            <div id="mesa">
+                <h2>Mesa Arizona Temple</h2>
+                <h3>Brief History of the Mesa Temple and Renovation Plans</h3>
+                <p>"In 1920, LDS Church President Heber J. Grant announced plans to construct a temple in the city
+                    of Mesa, Arizona. This temple would be an oasis in the desert – a sanctuary – for members of
+                    The Church of Jesus Christ of Latter-day Saints living outside historically LDS communities.
+                    Instead of asking church members to move to Utah to be near temples at the beginning of the
+                    20th century, church leaders started taking the temples to the people. Construction of a temple in
+                    Mesa, Arizona complemented temples being built in Laie, Hawaii and Cardston, Alberta,
+                    Canada.
+                    Architects Ramm Hansen and Don Carlos Young were selected to design the Mesa Temple
+                    following a design competition. Their neo classical temple with its strong horizontal elements
+                    and buff colored terra cotta was a strong departure from older LDS temples made of stone and
+                    topped with steeples. The neo classical design of the building exterior continued throughout the
+                    interior of the building. A focal point of the temple interior were large murals painted by
+                    prominent LDS artists J. Leo Fairbanks, Lee Greene Richards, Fritzof Weberg, A.B. Wright, and
+                    LeConte Stewart. The temple baptismal font, one of the most important symbolic elements in
+                    any LDS temple, was designed by Torlief Knaphus. Architects Young and Hansen also designed
+                    a formal landscape with reflecting pools and trees that complemented the temple design. The
+                    lushness of the landscape created a strong contrast to the desert around the temple."
+                    <span><a href="https://www.mormonnewsroom.org/multimedia/file/Mesa-Arizona-Temple-History.pdf">
+                            The story continues here.</a></span></p>
+                <p>After that brief history, here is a summary of the renovation plans:
+                    "Detailed plans of major renovations for the historic Mesa Arizona Temple of The Church of Jesus
+                    Christ
+                    of Latter-day Saints were released Thursday, May 10, 2018, days before the religious building is
+                    scheduled to close for a two-year renovation.
+
+                    The 75,000-square-foot temple will undergo extensive work, including site improvements, exterior
+                    maintenance, interior finishes, and building system maintenance for HVAC systems. The temple
+                    grounds
+                    will also be renovated and enhanced. The public will be invited to tour the temple before it
+                    reopens,
+                    which is expected to be in 2020."
+                    <span> <a href="https://www.mormonnewsroom.org/article/major-renovation-mesa-arizona-temple">
+                            Continue
+                            reading.</a></span>
+                </p>
+            </div>
+        </article>
+        <div id="reservation">
+            <h3>Book your room to work at the temple! Take advantage of our reception area too!</h3>
+            <div id="reserve-button">
+                <a href="reservation.html">Make a reservation!</a>
+            </div>
+        </div>
+        <article class="activities">
+            <h2>Temple Activites for Wards and Families</h2>
+            <ol>
+                <li>Schedule your wedding/sealing and use our reception area.</li>
+                <li>Plan your next stake temple day.</li>
+                <li>Schedule your next youth temple trip.</li>
+                <li>Bring your family to enjoy the peaceful environment.</li>
+                <li>Support that newly called missionary as they prepare for their mission.</li>
+                <li>Work on your family history at our History Center.</li>
+                <li>Come serve a mission as a temple worker!</li>
+            </ol>
+        </article>
+        <div class="carousel">
+            <div class="pictures fade">
+                <div class="picture-grid">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="images/tucson-arizona-temple2-400-93.jpg">
+                        <img src="images/tucson-arizona-temple2-600-70.jpg" alt="Tucson Arizona Temple">
+                    </picture>
+                </div>
+                <div class="carousel-text">Tucson Arizona Temple</div>
+                <div class="left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="pictures fade">
+                <div class="picture-grid">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="images/phoenix-arizona-temple2-400-95.jpg">
+                        <img src="images/phoenix-arizona-temple2-600-80.jpg" alt="Phoenix Arizona Temple">
+                    </picture>
+                </div>
+                <div class="carousel-text">Phoenix Arizona Temple</div>
+                <div class="left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="pictures fade">
+                <div class="picture-grid">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="images/gilbert-arizona-temple2-400-95.jpg">
+                        <img src="images/gilbert-arizona-temple2-600-85.jpg" alt="Gilbert Arizona Temple">
+                    </picture>
+                </div>
+                <div class="carousel-text">Gilbert Arizona Temple</div>
+                <div class="left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="pictures fade">
+                <div class="picture-grid">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="images/gila-valley-temple2-400-90.jpg">
+                        <img src="images/gila-valley-temple2-600-80.jpg" alt="The Gila Valley Arizona Temple">
+                    </picture>
+                </div>
+                <div class="carousel-text">The Gila Valley Arizona Temple</div>
+                <div class="left">
+                    <button onclick="moveSlides(-1)">&#10094;</button>
+                </div>
+                <div class="right">
+                    <button onclick="moveSlides(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+        </div>
+        <div class="footer">
+            <p>Link to resources used <a href="resources.html">HERE</a></p>
+            <p>&copy; Bethesda Headquarters</p>
+            <p>4800 Montgomery Ln #300,</p>
+            <p>Bethesda, MD 20814</p>
+            <p>301-518-4318</p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+
+</html>

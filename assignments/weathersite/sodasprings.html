@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Southern Skies Soda Springs weather conditions, 5-day forecast">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <title>Southern Skies - Soda Springs - weather report - current conditions - 5-day forecast</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+            <div class="logo-box">
+                <img src="images/bolt-one-100.png" alt="bolt logo">
+            </div>
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands</h2>
+            </div>
+            <div class="conditions">
+                <img id="current-conditions" src="images/current-weather.png" alt="current conditions">
+                <h2><span id="cityMain"><!--JSON DATA HERE--></span></h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a href="preston.html">Preston</a>
+            </li>
+            <li>
+                <a class="selected" href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="body-title">
+            <h1>The Town of <span id="cityName"><!--JSON DATA HERE--></span></h1>
+        </div>
+        <div class="weather-box">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/westboundary-photography-chris-gill-60180-unsplash-400-90px.jpg">
+                <source media="(max-width: 650px)" srcset="images/westboundary-photography-chris-gill-60180-unsplash-650-80px.jpg">
+                <img id="hero" title="Forest spring" src="images/westboundary-photography-chris-gill-60180-unsplash-900-60px.jpg" alt="Mountain spring">
+            </picture>
+            <div class="weather-details">
+                <div id="weather-summary">
+                    <p class="label">Currently:</p>
+                    <p class="value"><span id="currently"><!--JSON DATA HERE--></span></p>
+                    <p class="label">Temperature:</p>
+                    <p class="value"><span id="temperature"><span id="cityTemp"><!--JSON DATA HERE--></span></span> &deg;F</p>
+                    <p class="label">Humidity:</p>
+                    <p class="value"><span id="cityHumid"><!--JSON DATA HERE--></span>%</p>
+                    <p class="label">Precipitation:</p>
+                    <p class="value">5 inches</p>
+                    <p class="label">Wind Speed:</p>
+                    <p class="value"><span id="windSpeed"><span id="cityWindChill"><!--JSON DATA HERE--></span></span> mph</p>
+                    <p class="label">Wind Chill:</p>
+                    <p class="value"><span id="windChill"></span> &deg;F</p>
+                </div>
+            </div>
+        </div>
+        <section class="forecast">
+            <h3>High Temperature Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td><span id="day1">87</span>&deg;F</td>
+                        <td><span id="day2">88</span>&deg;F</td>
+                        <td><span id="day3">89</span>&deg;F</td>
+                        <td><span id="day4">87</span>&deg;F</td>
+                        <td><span id="day5">85</span>&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article class="text" id="article">
+            <h3>Hot Springs in Idaho!</h3>
+            <h4>By Wayne Chandler</h4>
+            <div class="article-box">
+                <div class="story">
+                    <p>
+                        Southern Idaho is a great place to find relaxing hot springs.  It's in a general hot spring
+                        area and close to Old Faithful in Yellowstone.  Come and let your worries and stress melt
+                        away and relax in one of these natural hot-tubs.  The tourist locations are open all year
+                        long and ready to give you an unforgettable experience
+                    </p>
+                    <p>
+                        The health benefits for your skin and your soul are definitely worth the trouble to come 
+                        to experience them for yourself.
+                    </p>
+                    <p>
+                        As a word of warning, some of the water temperatures can get dangerously hot to swim in 
+                        and some springs release toxins, so it's best to check a guide before heading out there.
+                        For a complete guide to hot springs in Idaho, 
+                        <a href="https://visitidaho.org/things-to-do/hot-springs/">click here</a>.
+                    </p>
+                </div>
+                <div class="article-image-box">
+                    <picture>
+                        <img title="Hot spring" src="images/ashley-knedler-102792-unsplash-300-99px.jpg" alt="Hot spring">
+                    </picture>
+                </div>
+            </div>
+        </article>
+        <article class="text">
+            <h3>Upcoming Events in Soda Springs</h3>
+            <div id="town-events">
+                <!--JSON DATA LIST HERE-->
+            </div>
+        </article>
+        <div class="map">
+            <h3>Contact Us</h3>
+            <div class="contact-box">
+                <div class="gmap-canvas">
+                    <iframe src="https://maps.google.com/maps?q=soda%20springs%2C%20idaho&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <br>
+                    <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                </div>
+                <div class="contact">
+                    <p>Contact Information</p>
+                    <p>Phone: 9843-2848</p>
+                    <p>Email: southernskies@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="about">
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+            </div>
+            <p>The weather data came from <a href="https://openweathermap.org/" target="_blank">here</a>.</p>
+            <p>&copy; Bryan Anderson | <a href="#">Terms of Use</a></p>
+            <p><span id="currentDate"></span></p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/sodasprings-weather.js"></script><!--Inserts values from API-->
+    <script src="scripts/sodasprings-forecast.js"></script><!--Inserts forecast values from API-->
+    <script src="scripts/sodasprings-events.js"></script>
+</body>
+
+</html>

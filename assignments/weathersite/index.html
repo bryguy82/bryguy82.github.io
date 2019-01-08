@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Southern Skies weather site for Preston, Soda Springs, and Fish Haven.
+        We provide you with a 5-day forecast, weather conditions, and a local user gallery.
+        We ask that you use our storm submit page too.">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <title>Southern Skies - Fish Haven, Preston, Soda Springs - current conditions - 5-day forecast - gallery</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+            <div class="logo-box">
+                <img src="images/bolt-one-100.png" alt="bolt logo">
+            </div>
+            <div class="title">
+                <h1>Southern Skies</h1>
+                <h2>Where the skies reach your hands</h2>
+            </div>
+            <div class="conditions">
+                <img id="current-conditions" src="images/current-weather.png" alt="current conditions">
+                <h2>Sunny</h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()" class="menuButton">&#9776;</button>
+        <ul id="clickMenu" class="hide">
+            <li>
+                <a class="selected" href="#">Home</a>
+            </li>
+            <li>
+                <a href="fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a href="preston.html">Preston</a>
+            </li>
+            <li>
+                <a href="sodasprings.html">Soda Springs</a>
+            </li>
+            <li>
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="body-title">
+            <h1>Welcome to Southern Skies!</h1>
+        </div>
+        <div class="weather-box">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/vidar-nordli-mathisen-546069-unsplash-400-80px.jpg">
+                <source media="(max-width: 650px)" srcset="images/vidar-nordli-mathisen-546069-unsplash-650-60px.jpg">
+                <img id="sunny" title="Sunny Day" src="images/vidar-nordli-mathisen-546069-unsplash-900-70px.jpg" alt="Sunshine">
+            </picture>
+        </div>
+        <article class="text">
+            <h3>Visit Yosemite National Park!</h3>
+            <div class="article-box">
+                <div class="story">
+                    <p>
+                        "Yosemite camping grounds can accommodate over 9,300 people. Specified areas are laid out for families, 
+                        groups and even those on horseback riding excursions within the park. Winter weather in Yosemite National 
+                        Park can change quickly. If you're camping in the winter, it's best to not venture too far off the main trails.  
+                        A large portion of the Yosemite’s 1,500 campgrounds are closed from late autumn through the spring.  
+                        When traveling or camping in the park, bring a Yosemite map and ask Yosemite park rangers for safety tips."
+                        <a href="https://www.nationalparks.org/explore-parks/yosemite-national-park" target="_blank">More info</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="text-right">
+            <form action="thanks.html">
+                <fieldset class="alerts">
+                    <legend>Sign up for Weather Alerts</legend>
+                    <label class="">First Name <input type="text" name="fname" pattern="[A-z]{5,}" title="Only letters please" required></label>
+                    <label class="">Email <input type="email" name="email" placeholder="example@email.com" required></label>
+                </fieldset>
+                <input class="submitButton" type="submit" value="Get Weather Alerts">
+            </form>
+        </article>
+        <div class="text">
+            <h3>Town Weather Summaries</h3>
+            <div class="gallery-grid">
+                <figure class="gallery">
+                    <img src="images/keghan-crossland-42934-unsplash-300.jpg" alt="Fish Haven">
+                </figure>
+                <div id="fish-haven"><!--JSON data goes here--></div>
+                <figure class="gallery">
+                    <img src="images/philip-swinburn-16488-unsplash-300.jpg" alt="Preston">
+                </figure>
+                <div id="preston"><!--JSON data goes here--></div>
+                <figure class="gallery">
+                    <img src="images/emily-campbell-327856-unsplash-300.jpg" alt="Soda Springs">
+                </figure>                
+                <div id="soda-springs"><!--JSON data goes here--></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="about">
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="images/icon-pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+            </div>
+            <p>Town information came from <a href="https://byui-cit230.github.io/weather/data/towndata.json" target="_blank">here</a>.</p>
+            <p>&copy; Bryan Anderson | <a href="#">Terms of Use</a></p>
+            <p><span id="currentDate"></span></p>
+            <p><a id="index" href="../../index.html">Back to the Index</a></p>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/home-towns.js"></script>
+</body>
+
+</html>
