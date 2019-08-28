@@ -8,8 +8,6 @@ var gila = document.querySelector(".temple-gila");
 var temples = new XMLHttpRequest();
 var url = "https://bryguy82.github.io/assignments/temple-inn/data/templedata.json";
 
-bryguy82.github.io/assignments/temple-inn/data/
-
 temples.open("GET", url);
 
 temples.responseType = "json";
