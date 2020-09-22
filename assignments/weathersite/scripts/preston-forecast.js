@@ -1,6 +1,6 @@
 
 var forecastRequest = new XMLHttpRequest();
-var url = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial"
+var url = "https://api.openweathermap.org/data/2.5/forecast?id=____&units=imperial"
 forecastRequest.open("GET", url, true);
 
 forecastRequest.send();
