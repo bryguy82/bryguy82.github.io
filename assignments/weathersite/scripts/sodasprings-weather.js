@@ -1,6 +1,6 @@
 
 var weatherSource = new XMLHttpRequest();
-var url = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
+var url = "https://api.openweathermap.org/data/2.5/weather?id=____&units=imperial";
 
 weatherSource.open("GET", url, true);
 
